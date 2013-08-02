@@ -56,12 +56,21 @@ header #home
 	background: #22BCE0;
 	border-radius: 0.5em 0.5em 0 0;
 	color: white;
+	display: inline-block;
 	margin: 5px 0 0;
 	padding: 0.1em 0.5em;
 	position: absolute;
 	right: 100px; 
 	text-decoration: none;
 	width: 100px;
+}
+header #home:after
+{
+	color: #FFF;
+	content: "\e004";
+	font-family: "icomoon"
+	position: absolute;
+	right: 5px;
 }
 header #logo img
 {
