@@ -1,252 +1,266 @@
 @font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot');
-	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.woff') format('woff'),
-		url('fonts/icomoon.ttf') format('truetype'),
-		url('fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot');
+    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.woff') format('woff'),
+        url('fonts/icomoon.ttf') format('truetype'),
+        url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 a
 {
-	color: #DD4F24;
+    color: #DD4F24;
 }
 body
 {
-	background: #EFEFEF;
-	color: #4C4C4C;
-	font-family: "PT Sans", Arial;
-	font-size: 16px;
-	margin: 0;
+    background: #EFEFEF;
+    color: #4C4C4C;
+    font-family: "PT Sans", Arial;
+    font-size: 16px;
+    margin: 0;
 }
 /*
 comentario de lo que sea
 */
 footer
 {
-	
+    
 }
 header
 {
-	background: #434343;
-	color: white;
-	margin: 0;
-	padding: 0.5em;
+    background: #434343;
+    color: white;
+    margin: 0;
+    padding: 0.5em;
 }
 header figure, header h1
 {
-	display: inline-block;
-	vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
 header h1
 {
-	font-size: 20px;
-	font-weight: normal;
-	margin: 1em 0 0 1em;
-	width: 60%;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 1em 0 0 1em;
+    width: 60%;
 }
 header #avatar
 {
-	float: right;
-	margin: 1em 1em 0 0;
+    float: right;
+    margin: 1em 1em 0 0;
 }
 header #avatar figcaption
 {
-	background: #22BCE0;
-	float: right;
-	height: 50px;
-	line-height: 50px;
+    background: #22BCE0;
+    float: right;
+    height: 50px;
+    line-height: 50px;
 }
 header #avatar figcaption:after
 {
-	content: "\e001";
-	font-family: "icomoon";
-	font-size: 0.7em;
-	opacity: 0.5;
+    content: "\e001";
+    font-family: "icomoon";
+    font-size: 0.7em;
+    opacity: 0.5;
 }
 header #avatar img
 {
-	float: left;
-	width: 50px;
+    float: left;
+    width: 50px;
 }
 header #logo img
 {
-	width: 80px;
+    width: 80px;
 }
 nav
 {
-	background: #878787;
-	font-size: 0.9em;
+    background: #878787;
+    font-size: 0.9em;
 }
 nav ul
 {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 nav ul li
 {
-	display: inline-block;
-	margin: 0 1.2em 0 0;
-	vertical-align: top;
+    display: inline-block;
+    margin: 0 1.2em 0 0;
+    vertical-align: top;
 }
 nav ul li a
 {
-	color: white;
-	display: block;
-	padding: 0.5em 0;
+    color: white;
+    display: block;
+    padding: 0.5em 0;
 }
 nav #flechita_nav a
 {
-	background: #22BCE0;
-	padding: 0.5em 0;
-	text-decoration: none;
+    background: #22BCE0;
+    padding: 0.5em 0;
+    text-decoration: none;
 }
 nav #flechita_nav a:after
 {
-	content: "\e000";
-	font-family: "icomoon";
-	opacity: 0.6;
+    content: "\e000";
+    font-family: "icomoon";
+    opacity: 0.6;
 }
 nav #publicar_nav
 {
-	/*i is zorri*/
-	background: #DD4F24;
-	float: right;
-	margin-right: 0; 
-	padding-right: 1em;
-	position: relative;
+    /*i is zorri*/
+    background: #DD4F24;
+    float: right;
+    margin-right: 0; 
+    padding-right: 1em;
+    position: relative;
 }
 nav #publicar_nav:after
 {
-	color: rgba(255,255,255,0.5);
-	content:  "\e004";
-	font-family: "icomoon";
-	font-size: 1.8em;
-	position: absolute;
-	right: 0;
-	top: 0;
+    color: rgba(255,255,255,0.5);
+    content:  "\e004";
+    font-family: "icomoon";
+    font-size: 1.8em;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 nav #publicar_nav a
 {
-	display: inline-block;
-	padding: 0.5em 1em;
-	text-decoration: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+#boton_home
+{
+    top: 5.4em;
+    left: 44%;
+    position: absolute;
+    background: #22AED7;
+    border-radius: 5px 5px 0 0;
+}
+#boton_home a
+{
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 0.2em 0.7em;
+    text-decoration: none;
+    margin-right: 2.5em;
+}
+#boton_home:after
+{
+    content: "\e002";
+    font-family: "icomoon";
+    color: rgba(255, 255, 255, 0.5);
+    vertical-align: middle;
 }
 #bienvenida
 {
-	display: none;
+    display: none;
 }
 #contenido
 {
-	margin: 1em;
+    margin: 1em;
 }
 #contenido .item
 {
-	background: white;
-	border-bottom: 3px #22BCE0 solid;
-	margin-bottom: 3em;
-	min-height: 128px;
-	position: relative;
+    background: white;
+    border-bottom: 3px #22BCE0 solid;
+    margin-bottom: 3em;
+    min-height: 128px;
+    position: relative;
 }
 #contenido .item p
 {
-	color: #7A7A7A;
-	font-size: 0.9em;
+    color: #7A7A7A;
+    font-size: 0.9em;
 }
 #contenido .item .datos_item
 {
-	text-align: right;
+    text-align: right;
 }
 #contenido .item .datos_item .comentarios_item
 {
-	background: #878787;
-	border-radius: 4px;
-	color: white;
-	margin: 0 0 0 2em;
-	padding: 4px;
-	text-decoration: none;
+    background: #878787;
+    border-radius: 4px;
+    color: white;
+    margin: 0 0 0 2em;
+    padding: 4px;
+    text-decoration: none;
 }
 #contenido .item .datos_item .guardar_item
 {
-	margin: 0 1em;
-	text-decoration: none;
+    margin: 0 1em;
+    text-decoration: none;
 }
 #contenido .item .datos_item .guardar_item:after
 {
-	color: #FD5;
-	content: "\e003";
-	font-family: "icomoon";
+    color: #FD5;
+    content: "\e003";
+    font-family: "icomoon";
 }
 #contenido .item .datos_item .tag_item
 {
-	background: #22BCE0;
-	border-radius: 0.5em;
-	color: white;
-	float: left;
-	padding: 0.2em 0.5em;
-	text-decoration: none;
+    background: #22BCE0;
+    border-radius: 0.5em;
+    color: white;
+    float: left;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
 }
 #contenido .item .imagen_item
 {
-	float: left;
-	margin: 0 1em 0 0;
+    float: left;
+    margin: 0 1em 0 0;
 }
 #contenido .item .imagen_item img
 {
-	width: 96px;
+    width: 96px;
 }
 #contenido .item .titulo_item
 {
-	font-size: 1em;
-	font-style: italic;
-	padding: 0.5em 0.5em 0;
+    font-size: 1em;
+    font-style: italic;
+    padding: 0.5em 0.5em 0;
 }
 #contenido .item .titulo_item a
 {
-	color: #444;
-	text-decoration: none;
+    color: #444;
+    text-decoration: none;
 }
 #contenido .item .votacion
 {
-	background: white;
-	border-radius: 0 0 0.5em 0.5em;
-	margin: 3px 0 0 0;
-	padding: 0.5em 0;
-	position: absolute;
-	text-align: center;
-	top: 100%;
-	width: 96px;
+    background: white;
+    border-radius: 0 0 0.5em 0.5em;
+    margin: 3px 0 0 0;
+    padding: 0.5em 0;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    width: 96px;
 }
 #contenido .item .votacion a
 {
-	text-decoration: none;
+    text-decoration: none;
 }
 #contenido .item .votacion .down:after,
 #contenido .item .votacion .up:after
 {
-	font-family: "icomoon";
-	font-size: 1.5em;
-	vertical-align: bottom;
+    font-family: "icomoon";
+    font-size: 1.5em;
+    vertical-align: bottom;
 }
 #contenido .item .votacion .down:after
 {
-	color: red;
-	content: "\e001";
+    color: red;
+    content: "\e001";
 }
 #contenido .item .votacion .up:after
 {
-	color: green;
-	content: "\e002";
+    color: green;
+    content: "\e002";
 }
-
-
-
-
-
-
-
-
-
