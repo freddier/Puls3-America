@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 a
 {
 	color: #DD4F24;
@@ -13,28 +23,47 @@ body
 /*
 comentario de lo que sea
 */
+footer
+{
+	background: #434343;
+	color: #A7A7A7;
+	padding: 1em 0;
+	text-align: center;
+	width: 100%;
+}
+footer p
+{
+	margin: 0;
+}
 header
 {
 	background: #434343;
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+	position:relative;
 }
-header figure, header h1
+header:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+header figure
 {
-	display: inline-block;
-	vertical-align: top;
+	float: left;
 }
 header h1
 {
 	font-size: 20px;
 	font-weight: normal;
-	margin: 1em 0 0 1em;
-	width: 60%;
+	margin: 1em 85px 1em 100px;
+	display: block;
 }
 header #avatar
 {
-	float: right;
+	position:  absolute;
+	top: 0;
+	right: 0;
 	margin: 1em 1em 0 0;
 }
 header #avatar figcaption
@@ -42,13 +71,34 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	line-height: 50px;
+}
+header #avatar figcaption:after
+{
+	content: "\e001";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.5;
 }
 header #avatar img
 {
 	float: left;
 	width: 50px;
 }
+
+header #home{
+	background-color: #20BCDF;
+    border-radius: 5px 5px 0 0;
+    bottom: 0;
+    color: #FFFFFF;
+    left: 50%;
+    padding: 0.3em 1em;
+    position: absolute;
+    text-decoration: none;
+
+}
+
+
 header #logo img
 {
 	width: 80px;
@@ -79,20 +129,43 @@ nav ul li a
 nav #flechita_nav a
 {
 	background: #22BCE0;
-	padding: 0.5em;
+	padding: 0.5em 0;
 	text-decoration: none;
+}
+nav #flechita_nav a:after, header #home:after
+{
+	content: "\e000";
+	font-family: "icomoon";
+	opacity: 0.6;
 }
 nav #publicar_nav
 {
 	/*i is zorri*/
+	background: #DD4F24;
 	float: right;
 	margin-right: 0; 
+	padding-right: 1em;
+	position: relative;
+}
+nav #publicar_nav:after
+{
+	color: rgba(255,255,255,0.5);
+	content:  "\e002";
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 nav #publicar_nav a
 {
-	background: #DD4F24;
-	padding: 0.5em 1em;
+	display: inline-block;
+	padding: 0.53em 1em;
 	text-decoration: none;
+}
+#bienvenida
+{
+	display: none;
 }
 #contenido
 {
@@ -102,17 +175,55 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	margin-bottom: 3em;
+	min-height: 128px;
+	position: relative;
 }
 #contenido .item p
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
+#contenido .item .datos_item
+{
+	text-align: right;
+}
+#contenido .item .datos_item .comentarios_item
+{
+	background: #878787;
+	border-radius: 4px;
+	color: white;
+	margin: 0 0 0 2em;
+	padding: 4px;
+	position: relative;
+	text-decoration: none;
+}
+#contenido .item .datos_item .comentarios_item:after{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #878787;
+	content: "";
+	left :10px;
+	position: absolute;
+	top:100%;
+}
+#contenido .item .datos_item .guardar_item
+{
+	margin: 0 1em;
+	text-decoration: none;
+}
+#contenido .item .datos_item .guardar_item:after
+{
+	color: #FD5;
+	content: "\e003";
+	font-family: "icomoon";
+}
 #contenido .item .datos_item .tag_item
 {
 	background: #22BCE0;
 	border-radius: 0.5em;
 	color: white;
+	float: left;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
@@ -136,6 +247,39 @@ nav #publicar_nav a
 	color: #444;
 	text-decoration: none;
 }
+#contenido .item .votacion
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 3px 0 0 0;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 96px;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+#contenido .item .votacion .down:after
+{
+	color: red;
+	content: "\e005";
+}
+#contenido .item .votacion .up:after
+{
+	color: green;
+	content: "\e004";
+}
+
 
 
 
