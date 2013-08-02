@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (min-width: 768px)
+{
+	body
+	{
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	
+
+	#contenido
+	{
+		margin:0 auto;
+		width: 100%;
+	}
+
+	#desktop{
+		background-color:red;
+		display:block;
+		margin:1em auto;
+		overflow:hidden;
+		width:100%;
+	}
+
+	#desktop #bienvenida
+	{
+		background-color:peru;
+		border-bottom: 1px solid #CCC;
+		display: inline-block;
+		vertical-align: top;
+		width: 35%;
+	}
+
+	#desktop #bienvenida h2
+	{
+		color: #434343;
+		margin:0;
+	}
+	
+	#desktop #bienvenida #registro
+	{
+		text-align: center;
+	}
+
+	#desktop #bienvenida #mensaje_registro
+	{
+		font-size: 0.8em;
+	}
+
+	#desktop #bienvenida #registro
+	{
+		background: #22BCE0;
+		color: white;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.5em 0;
+	}
+	
+	#desktop #destacados{
+		background-color:pink;
+		display:inline-block;
+		
+		margin-right:5%;
+		vertical-align: top;
+		width:60%;
+	}
+
+	#desktop #destacados h2 {
+		display:inline-block;
+		margin:1em 0 0 0;
+		vertical-align: top;
+		width:83%;
+	}
+	#desktop #destacados h2 a{
+		color:white;
+	}
+
+	#desktop #destacados #postprimario{
+
+		border-bottom: 2px solid #DE5659;
+	}
+
+	#desktop #destacados #postprimario img{
+		width:100%;
+	}
+
+	#desktop #destacados #votapostprimario{
+		display:inline-block;
+		margin:1em;
+		vertical-align: top;
+		width:40px;
+	}
+
+	#desktop #destacados #votapostprimario a{
+		display:block;
+		text-decoration: none;
+	}
+
+	#desktop #destacados #votapostprimario .up:after
+	{
+		color: green;
+		content: "\e004";
+	}
+
+	#desktop #destacados #votapostprimario .down:after
+	{
+		color: red;
+		content: "\e005";
+	}
+
+	#desktop .up,#desktop .down{
+		font-family: "icomoon";
+	}
+}

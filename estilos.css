@@ -163,7 +163,7 @@ nav #publicar_nav a
 	padding: 0.53em 1em;
 	text-decoration: none;
 }
-#bienvenida
+#bienvenida, #desktop, #destacados
 {
 	display: none;
 }
@@ -279,10 +279,6 @@ nav #publicar_nav a
 	color: green;
 	content: "\e004";
 }
-
-
-
-
 
 
 
