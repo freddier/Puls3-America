@@ -19,6 +19,7 @@ header
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+	position: relative;
 }
 header figure, header h1
 {
@@ -48,6 +49,19 @@ header #avatar img
 {
 	float: left;
 	width: 50px;
+}
+header #home
+{
+	bottom: 0;
+	background: #22BCE0;
+	border-radius: 0.5em 0.5em 0 0;
+	color: white;
+	margin: 5px 0 0;
+	padding: 0.1em 0.5em;
+	position: absolute;
+	right: 100px; 
+	text-decoration: none;
+	width: 100px;
 }
 header #logo img
 {
@@ -102,6 +116,7 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	position: relative;
 }
 #contenido .item p
 {
@@ -135,6 +150,13 @@ nav #publicar_nav a
 {
 	color: #444;
 	text-decoration: none;
+}
+
+#contenido .item .votacion
+{
+	position: absolute;
+	margin:0;
+	width: 96px;
 }
 
 
