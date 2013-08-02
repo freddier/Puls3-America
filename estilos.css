@@ -102,6 +102,9 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	margin-bottom: 3em;
+	min-height: 128px;
+	position: relative;
 }
 #contenido .item p
 {
@@ -135,6 +138,17 @@ nav #publicar_nav a
 {
 	color: #444;
 	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 3px 0 0 0;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 96px;
 }
 
 
