@@ -24,6 +24,10 @@ body
 /*
 comentario de lo que sea
 */
+footer
+{
+	
+}
 header
 {
 	background: #434343;
@@ -130,6 +134,10 @@ nav #publicar_nav a
 	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
+}
+#bienvenida
+{
+	display: none;
 }
 #contenido
 {
