@@ -175,7 +175,17 @@ nav #publicar_nav a
 	color: white;
 	margin: 0 0 0 2em;
 	padding: 4px;
+	position: relative;
 	text-decoration: none;
+}
+#contenido .item .datos_item .comentarios_item:after{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #878787;
+	content: "";
+	left :10px;
+	position: absolute;
+	top:100%;
 }
 #contenido .item .datos_item .guardar_item
 {
