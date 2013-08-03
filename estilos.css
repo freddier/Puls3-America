@@ -19,11 +19,9 @@ body
 	color: #4C4C4C;
 	font-family: "PT Sans", Arial;
 	font-size: 16px;
-	margin: 0;
+
 }
-/*
-comentario de lo que sea
-*/
+
 footer
 {
 	background: #434343;
@@ -42,11 +40,37 @@ header
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+	position: relative;
 }
 header:after{
 	clear: both;
 	content: "";
 	display: block;
+}
+header div
+{
+	background-color: #22BCE0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	height: 22px;
+	width:99px;
+	position: absolute;
+	bottom: 0;
+	left: 60%;
+	padding: 0 10px;
+	font-size: 1.1em;
+
+
+}
+header div:after
+{
+	
+	content: "\e002";
+	color: rgba(255,255,255,0.5);
+	font-family: "icomoon";
+	float: right;
+    line-height: 22px;
+	
 }
 header figure
 {
@@ -111,6 +135,16 @@ nav ul li a
 	color: white;
 	display: block;
 	padding: 0.5em 0;
+	text-decoration: none;
+
+}
+nav ul li a:hover
+{
+	color: white;
+	display: block;
+	padding: 0.5em 0;
+	text-decoration:underline;
+	
 }
 nav #flechita_nav a
 {
