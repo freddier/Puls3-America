@@ -25,17 +25,22 @@
 	}
 
 	#desktop{
-		background-color:red;
+		background-color: #F3F3F3;
 		display:block;
-		margin:1em auto;
+		margin:1em auto 0 auto;
 		overflow:hidden;
 		width:100%;
+
+	}
+
+	#desktop p{
+		color:#7A7A7A
 	}
 
 	#desktop #bienvenida
 	{
-		background-color:peru;
-		border-bottom: 1px solid #CCC;
+		
+		
 		display: inline-block;
 		vertical-align: top;
 		width: 35%;
@@ -43,60 +48,128 @@
 
 	#desktop #bienvenida h2
 	{
+		font-size: 1em;
 		color: #434343;
 		margin:0;
+
+
 	}
 	
-	#desktop #bienvenida #registro
-	{
-		text-align: center;
-	}
-
-	#desktop #bienvenida #mensaje_registro
-	{
-		font-size: 0.8em;
-	}
+	
 
 	#desktop #bienvenida #registro
 	{
 		background: #22BCE0;
 		color: white;
 		display: block;
-		font-size: 1.2em;
+		font-size: 1em;
 		padding: 0.5em 0;
+		box-shadow: 5px 5px 0 #CFCFCF;
+   		-webkit-box-shadow: 5px 5px 0 #CFCFCF;
+   		-moz-box-shadow: 5px 5px 0 #CFCFCF;
+		margin:0 auto;
+		text-align: center;
+		text-decoration: none;
+   		width:70%;
+   		
 	}
 	
-	#desktop #destacados{
-		background-color:pink;
-		display:inline-block;
+
+	#desktop #bienvenida #mensaje_registro
+	{
+		border-bottom: 1px solid #BEBEBE;
+		font-size: 0.8em;
+		padding-bottom: 2em;
+		text-align: center;
 		
+	}
+
+	#desktop #bienvenida #tactividades{
+		margin-top:-0.89em;
+		padding-top: 2em;
+		border-top: 2px solid #FFF;
+		text-align: center;
+		font-size: .9em;
+	}
+
+	#desktop #bienvenida #tactividades a{
+		background-color: #DE5659;
+		color:#FFF;
+		display: block;
+		margin:0 auto;
+		padding:.5em 0;
+		text-decoration: none;
+		
+
+	}
+
+	#desktop #bienvenida .actividades{
+		border-bottom: 1px solid #D1D1D1;
+		padding-bottom: 1em;
+		font-size: .9em;
+		margin-bottom: 1em;
+	}
+
+	#desktop #bienvenida .actividades p{
+		margin:0;
+	}
+
+	#desktop #bienvenida .actividades .coments{
+		background-color: #DE5659;
+		color:#FFF;
+		padding:.5em;
+		display:block;
+		float:left;
+		border-radius: 5px;
+		text-decoration: none;
+		margin:1em 1em 0 0;
+		font-weight: bold;
+	}
+
+	
+
+	
+	#desktop #destacados{
+		
+		display:inline-block;
 		margin-right:5%;
 		vertical-align: top;
 		width:60%;
 	}
 
 	#desktop #destacados h2 {
-		display:inline-block;
-		margin:1em 0 0 0;
-		vertical-align: top;
-		width:83%;
+		font-style:italic;
+		font-size: 1.1em;
+		margin:.5em 0 0 0;
+		
+		
 	}
 	#desktop #destacados h2 a{
-		color:white;
+		color:#444444;
+		text-decoration: none;
 	}
 
 	#desktop #destacados #postprimario{
 
-		border-bottom: 2px solid #DE5659;
+		background-color: #CECECE;
+		border-bottom: 3px solid #DE5659;
+
 	}
 
 	#desktop #destacados #postprimario img{
 		width:100%;
 	}
 
+	#desktop #destacados #titulopostprimario{
+		display:inline-block;
+		vertical-align: top;
+		width:83%;
+		font-size: .9em;
+	}
+
 	#desktop #destacados #votapostprimario{
 		display:inline-block;
-		margin:1em;
+		margin:.5em 0em 1em 1em;
 		vertical-align: top;
 		width:40px;
 	}
@@ -104,6 +177,7 @@
 	#desktop #destacados #votapostprimario a{
 		display:block;
 		text-decoration: none;
+		font-size: 1.3em;
 	}
 
 	#desktop #destacados #votapostprimario .up:after
@@ -118,7 +192,105 @@
 		content: "\e005";
 	}
 
+
+	#desktop #destacados .postsecundario{
+		background-color: #FFF;
+		border-bottom: 3px solid #DE5659;
+		font-size: .9em;
+		margin-top:1em;
+		min-height: 128px;
+		position:relative;
+		margin-bottom: 3em;
+	}
+
+
+	#desktop #destacados .postsecundario figure img{
+		
+		float:left;
+		margin-right:1em;
+		width:96px;
+	}
+
+	
+	#desktop #destacados .postsecundario h2{
+		padding:.5em 0;
+		font-size: 1.1em;
+
+	}
+
+	#desktop #destacados .postsecundario .metadatos{
+		
+		text-align: right;
+	}
+	
+	#desktop #destacados .postsecundario .metadatos a,#desktop #destacados .postsecundario .votapostsecundario a{
+		
+		text-decoration: none;
+	}
+
+	#desktop #destacados .postsecundario .metadatos .comentario{
+		background-color: #878787;
+		border-radius: 4px;
+		color:#FFF;
+		padding:4px;
+		margin-left:2em;
+	}
+
+	#desktop #destacados .postsecundario .metadatos .guardar:after{
+		color: #FFBE13;
+		content: "\e003";
+		font-family: "icomoon";
+		margin:0 1em;
+
+	}
+
+	
+	#desktop #destacados .postsecundario .metadatos .tag{
+		background-color: #22BCE0;
+		border-radius: 5px;
+		color:#FFF;
+		float:left;
+		padding:.2em .5em;
+		text-decoration: none;
+	}
+
+	#desktop #destacados .postsecundario .votapostsecundario{
+		position:absolute;
+		background-color: #FFF;
+		padding:.5em 0;
+		border-radius: 0 0 .5em .5em;
+		text-align: center;
+		top:91%;
+		width: 96px;
+	}
+
+	#desktop #destacados .postsecundario .votapostsecundario a{
+		font-size: 1.5em;
+	}
+
+	#desktop #destacados .postsecundario .votapostsecundario .down:after{
+		color: red;
+		content: "\e005";
+		font-family: "icomoon";		
+
+	}
+
+	
+
+	#desktop #destacados .postsecundario .votapostsecundario .up:after{
+		color: green;
+		content: "\e004";
+		font-family: "icomoon";		
+
+	}
+
+
+	
+
+
 	#desktop .up,#desktop .down{
 		font-family: "icomoon";
 	}
+
+	
 }
