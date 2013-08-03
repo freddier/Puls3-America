@@ -3,7 +3,7 @@
 	body
 	{
 		margin: 0 auto;
-		max-width: 1200px;
+		
 	}
 	#bienvenida
 	{
@@ -33,9 +33,27 @@
 		display: block;
 		font-size: 1.2em;
 		padding: 0.5em 0;
+		text-decoration: none;
+	}
+	#bienvenida #registro:hover
+	{
+		text-decoration: underline;
 	}
 	#contenido
 	{
 		width: 70%;
 	}
+}
+@media screen and (max-width: 456px)
+{
+
+nav #publicar_nav
+{
+	/*i is zorri*/
+	background: #DD4F24;
+	float:none;
+	margin-right: 0; 
+	padding-right: 1em;
+	position: relative;
+}
 }
