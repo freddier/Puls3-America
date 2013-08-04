@@ -50,22 +50,19 @@ header:after{
 	content: "";
 	display: block;
 }
-header figure
-{
-	
-	float: left;
-}
+
 header h1
 {
 	font-size: 20px;
 	font-weight: normal;
 	margin: 1em 85px 1em 100px;
 	display: block;
+	text-align: center;
 }
 header #avatar
 {
 	
-	float: right;
+	float: left;
 	margin: 1em 1em 0 0;
 	position:  absolute;
 	top: 0;
@@ -90,6 +87,10 @@ header #avatar img
 	border-radius: 10px 0 0 10px;
 	float: left;
 	width: 50px;
+}
+header #logo
+{
+	float: left;
 }
 header #logo img
 {
@@ -125,7 +126,7 @@ nav ul li:first-child a
 {
 	background: #22BCE0;
 	border-radius: 0 2px 2px 0;
-	padding: .5em .2em .4em 0;
+	padding: .55em .2em .4em 0;
 	text-decoration: none;
 	position: absolute;
 	left:0;
