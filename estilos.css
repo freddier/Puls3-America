@@ -17,6 +17,7 @@ body
 {
 	background: #EFEFEF;
 	color: #4C4C4C;
+	min-width: 472px;
 	font-family: "PT Sans", Arial;
 	font-size: 16px;
 	margin: 0;
@@ -42,6 +43,7 @@ header
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+	position: relative;
 }
 header:after{
 	clear: both;
@@ -50,6 +52,7 @@ header:after{
 }
 header figure
 {
+	
 	float: left;
 }
 header h1
@@ -61,10 +64,12 @@ header h1
 }
 header #avatar
 {
+	
+	float: right;
+	margin: 1em 1em 0 0;
 	position:  absolute;
 	top: 0;
 	right: 0;
-	margin: 1em 1em 0 0;
 }
 header #avatar figcaption
 {
@@ -82,6 +87,7 @@ header #avatar figcaption:after
 }
 header #avatar img
 {
+	border-radius: 10px 0 0 10px;
 	float: left;
 	width: 50px;
 }
@@ -93,12 +99,14 @@ nav
 {
 	background: #878787;
 	font-size: 0.9em;
+	position: relative;
 }
 nav ul
 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 nav ul li
 {
@@ -112,43 +120,62 @@ nav ul li a
 	display: block;
 	padding: 0.5em 0;
 }
-nav #flechita_nav a
+nav ul li:first-child
+{
+	border-radius: 0 2px 2px 0;
+}
+
+nav ul li:first-child a
 {
 	background: #22BCE0;
-	padding: 0.5em 0;
+	padding: .5em .2em .4em 0;
 	text-decoration: none;
+	position: absolute;
+	left:0;
 }
-nav #flechita_nav a:after
+nav ul li:first-child a:after
 {
 	content: "\e000";
 	font-family: "icomoon";
 	opacity: 0.6;
 }
-nav #publicar_nav
+nav ul li:last-child
 {
 	/*i is zorri*/
 	background: #DD4F24;
+	border-radius: 2px 0 0 2px;
 	float: right;
 	margin-right: 0; 
-	padding-right: 1em;
+	padding-left: .6em;
+	padding-right: 3em;
 	position: relative;
+
 }
-nav #publicar_nav:after
+nav li:last-child a:after
 {
 	color: rgba(255,255,255,0.5);
 	content:  "\e004";
 	font-family: "icomoon";
 	font-size: 1.8em;
+	padding: .1em .3em 0 0;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
-nav #publicar_nav a
+nav ul li:last-child a
 {
 	display: inline-block;
-	padding: 0.5em 1em;
 	text-decoration: none;
 }
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4),
+nav ul li:nth-child(5)
+{
+	width: 10%;
+
+}
+
 #bienvenida
 {
 	display: none;
@@ -161,6 +188,7 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	border-radius: .5em .5em .5em 0;
 	margin-bottom: 3em;
 	min-height: 128px;
 	position: relative;
@@ -220,6 +248,7 @@ nav #publicar_nav a
 }
 #contenido .item .imagen_item img
 {
+	border-radius: .5em 0 0 0;
 	width: 96px;
 }
 #contenido .item .titulo_item
@@ -236,7 +265,7 @@ nav #publicar_nav a
 #contenido .item .votacion
 {
 	background: white;
-	border-radius: 0 0 0.5em 0.5em;
+	border-radius: 0 0 .5em .5em;
 	margin: 3px 0 0 0;
 	padding: 0.5em 0;
 	position: absolute;
@@ -266,11 +295,9 @@ nav #publicar_nav a
 	content: "\e002";
 }
 
-
-
-
-
-
+.hover {
+    cursor: pointer;
+}
 
 
 
