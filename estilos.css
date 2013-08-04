@@ -50,7 +50,6 @@ header:after{
 	content: "";
 	display: block;
 }
-
 header h1
 {
 	font-size: 20px;
@@ -61,8 +60,7 @@ header h1
 }
 header #avatar
 {
-	
-	float: left;
+	float: right;
 	margin: 1em 1em 0 0;
 	position:  absolute;
 	top: 0;
@@ -71,8 +69,8 @@ header #avatar
 header #avatar figcaption
 {
 	background: #22BCE0;
-	float: right;
 	height: 50px;
+	margin-left: 50px;
 	line-height: 50px;
 }
 header #avatar figcaption:after
@@ -183,25 +181,25 @@ nav ul li:nth-child(5)
 {
 	margin: 1em;
 }
-#contenido .item
+#contenido article
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
 	border-radius: .5em .5em .5em 0;
-	margin-bottom: 3em;
-	min-height: 128px;
+	margin-bottom: 2.5em;
+	min-height: 133px;
 	position: relative;
 }
-#contenido .item p
+#contenido article p
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
-#contenido .item .datos_item
+#contenido article .datos_item
 {
 	text-align: right;
 }
-#contenido .item .datos_item .comentarios_item
+#contenido article .datos_item .comentarios_item
 {
 	background: #878787;
 	border-radius: 4px;
@@ -211,7 +209,7 @@ nav ul li:nth-child(5)
 	position: relative;
 	text-decoration: none;
 }
-#contenido .item .datos_item .comentarios_item:after{
+#contenido article .datos_item .comentarios_item:after{
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #878787;
@@ -220,18 +218,18 @@ nav ul li:nth-child(5)
 	position: absolute;
 	top:100%;
 }
-#contenido .item .datos_item .guardar_item
+#contenido article .datos_item .guardar_item
 {
 	margin: 0 1em;
 	text-decoration: none;
 }
-#contenido .item .datos_item .guardar_item:after
+#contenido article .datos_item .guardar_item:after
 {
 	color: #FD5;
 	content: "\e003";
 	font-family: "icomoon";
 }
-#contenido .item .datos_item .tag_item
+#contenido article .datos_item .tag_item
 {
 	background: #22BCE0;
 	border-radius: 0.5em;
@@ -240,55 +238,56 @@ nav ul li:nth-child(5)
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
-#contenido .item .imagen_item
+#contenido article .imagen_item
 {
 	float: left;
 	margin: 0 1em 0 0;
 }
-#contenido .item .imagen_item img
+#contenido article  .imagen_item img
 {
 	border-radius: .5em 0 0 0;
-	width: 96px;
+	width: 100px;
 }
-#contenido .item .titulo_item
+#contenido article  .titulo_item
 {
 	font-size: 1em;
 	font-style: italic;
 	padding: 0.5em 0.5em 0;
 }
-#contenido .item .titulo_item a
+#contenido article  .titulo_item a
 {
 	color: #444;
 	text-decoration: none;
 }
-#contenido .item .votacion
+#contenido article .votacion
 {
 	background: white;
 	border-radius: 0 0 .5em .5em;
 	margin: 3px 0 0 0;
-	padding: 0.5em 0;
+	padding: .25em 0;
 	position: absolute;
 	text-align: center;
+	font-size: .8em;
 	top: 100%;
-	width: 96px;
+	width: 100px;
 }
-#contenido .item .votacion a
+#contenido article .votacion a
 {
 	text-decoration: none;
 }
-#contenido .item .votacion .down:after,
-#contenido .item .votacion .up:after
+#contenido article .votacion .down:after,
+#contenido article .votacion .up:after
 {
 	font-family: "icomoon";
 	font-size: 1.5em;
 	vertical-align: bottom;
 }
-#contenido .item .votacion .down:after
+#contenido article .votacion .down:after
 {
 	color: red;
 	content: "\e001";
 }
-#contenido .item .votacion .up:after
+#contenido article .votacion .up:after
 {
 	color: green;
 	content: "\e002";
