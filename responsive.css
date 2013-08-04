@@ -3,39 +3,47 @@
 	body
 	{
 		margin: 0 auto;
-		max-width: 1200px;
+		max-width: 800px;
 	}
 	#bienvenida
 	{
 		display: block;
-		border-bottom: 1px solid #CCC;
 		float: right;
+		margin: 0 auto;
 		margin-right: 2%;
-		width: 25%;
+		width: 35%;
 	}
 	#bienvenida h2
 	{
-		color: #434343;
+		color: #545454;
+		font-size: 130%;
 	}
 	#bienvenida #mensaje_registro,
-	#bienvenida #registro
+	#bienvenida #hi
 	{
 		text-align: center;
 	}
-	#bienvenida #mensaje_registro
-	{
-		font-size: 0.8em;
-	}
-	#bienvenida #registro
+	#bienvenida #hi
 	{
 		background: #22BCE0;
+		border-radius: 4px;
 		color: white;
 		display: block;
-		font-size: 1.2em;
+		font-size: 1.1em;
+		margin-bottom: 0.3em;
 		padding: 0.5em 0;
+		box-shadow: 0 2px 2px 0 #777;
 	}
-	#contenido
+	.contenido
 	{
-		width: 70%;
+		width: 59%;
+	}
+	.contenido .destacado
+	{
+		display: block;
+	}
+	.contenido.full-width
+	{
+		width: 96%;
 	}
 }

@@ -12,6 +12,7 @@
 a
 {
 	color: #DD4F24;
+	text-decoration: none;
 }
 body
 {
@@ -42,6 +43,7 @@ header
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+	position: relative;
 }
 header:after{
 	clear: both;
@@ -88,6 +90,10 @@ header #avatar img
 header #logo img
 {
 	width: 80px;
+}
+html
+{
+	background-color: #222;
 }
 nav
 {
@@ -150,12 +156,15 @@ nav #home_btn a:after
 }
 nav #publicar_nav
 {
-	/*i is zorri*/
 	background: #DD4F24;
 	float: right;
 	margin-right: 0; 
 	padding-right: 1em;
 	position: relative;
+}
+nav #publicar_nav a
+{
+	color: #CCC;
 }
 nav #publicar_nav:after
 {
@@ -176,12 +185,130 @@ nav #publicar_nav a
 #bienvenida
 {
 	display: none;
+	margin: 0 auto;
 }
-#contenido
+#bienvenida h2
+{
+	margin: 1em 0 0 0;
+}
+#bienvenida h3
+{
+	background-color: #DE5659;
+	border-radius: 2px;
+	color: #DEDEDE;
+	font-size: 110%;
+	font-weight: normal;
+	line-height: 170%;
+	text-align: center;
+}
+#bienvenida p
+{
+	color: #999;
+	font-size: 110%;
+	margin-top: 0;
+}
+#bienvenida #actividad
+{
+	margin: 0 auto;
+}
+#bienvenida #actividad article
+{
+	border-bottom: 1px solid #CDCDCD;
+	margin-bottom: 0.5em;
+	width: 95%;
+}
+#bienvenida #actividad .codigo_actividad,
+#bienvenida #actividad .texto_actividad
+{
+	display: inline-block;
+}
+#bienvenida #actividad .codigo_actividad
+{
+	background-color: #DE5659;
+	border-radius: 2px;
+	color: #EDEDED;
+	font-size: 100%;
+	font-weight: bold;
+	line-height: 2em;
+	margin: 0.5em 0 0 0;
+	position: relative;
+	text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    width: 15%;
+}
+#bienvenida #actividad .codigo_actividad:after
+{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #DE5659;
+	content: "";
+	left :22px;
+	position: absolute;
+	top:100%;
+}
+#bienvenida #actividad .texto_actividad
+{
+	color: #777;
+	font-size: 90%;
+	margin: 0 0 0.5em 1em;
+	width: 75%;
+}
+#bienvenida #registro
+{
+	left: 50%;
+    margin: 0 0 0 -7.5em;
+    padding: 0;
+    position: relative;
+    width: 15em;
+}
+#bienvenida #mensaje_registro
+{
+	border-bottom: 2px solid #CCC;
+	display: block;
+	font-size: 0.7em;
+	font-style: italic;
+	padding: 0 0 1em 0;
+}
+.contenido
 {
 	margin: 1em;
 }
-#contenido .item
+.contenido .destacado
+{
+	display: none;
+}
+.contenido .destacado .item
+{
+	background-color: #DEDEDE;
+	border-bottom: 3px solid #DD4F24; 
+	margin: -3px 0 0 0;
+	min-height: 100px;
+}
+.contenido .destacado .item .autor_item
+{
+	float: left;
+	margin: 0;
+}
+.contenido .destacado .item .titulo_item
+{
+	float: left;
+	font-size: 130%;
+	margin: 0; 
+	padding-left: 0; 
+	vertical-align: top;
+	width: 80%;
+}
+.contenido .destacado .item .votacion
+{
+	background: transparent;
+	float: left;
+    font-size: 110%;
+    margin: 0 1em;
+    position: static;
+    width: 8%;
+}
+.contenido .item
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
@@ -189,16 +316,17 @@ nav #publicar_nav a
 	min-height: 128px;
 	position: relative;
 }
-#contenido .item p
+.contenido .item p
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
-#contenido .item .datos_item
+.contenido .item .datos_item
 {
+	margin-top: 2em;
 	text-align: right;
 }
-#contenido .item .datos_item .comentarios_item
+.contenido .item .datos_item .comentarios_item
 {
 	background: #878787;
 	border-radius: 4px;
@@ -208,7 +336,7 @@ nav #publicar_nav a
 	position: relative;
 	text-decoration: none;
 }
-#contenido .item .datos_item .comentarios_item:after{
+.contenido .item .datos_item .comentarios_item:after{
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #878787;
@@ -217,18 +345,18 @@ nav #publicar_nav a
 	position: absolute;
 	top:100%;
 }
-#contenido .item .datos_item .guardar_item
+.contenido .item .datos_item .guardar_item
 {
 	margin: 0 1em;
 	text-decoration: none;
 }
-#contenido .item .datos_item .guardar_item:after
+.contenido .item .datos_item .guardar_item:after
 {
 	color: #FD5;
 	content: "\e003";
 	font-family: "icomoon";
 }
-#contenido .item .datos_item .tag_item
+.contenido .item .datos_item .tag_item
 {
 	background: #22BCE0;
 	border-radius: 0.5em;
@@ -237,27 +365,27 @@ nav #publicar_nav a
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
-#contenido .item .imagen_item
+.contenido .item .imagen_item
 {
 	float: left;
 	margin: 0 1em 0 0;
 }
-#contenido .item .imagen_item img
+.contenido .item .imagen_item img
 {
 	width: 96px;
 }
-#contenido .item .titulo_item
+.contenido .item .titulo_item
 {
 	font-size: 1em;
 	font-style: italic;
 	padding: 0.5em 0.5em 0;
 }
-#contenido .item .titulo_item a
+.contenido .item .titulo_item a
 {
 	color: #444;
 	text-decoration: none;
 }
-#contenido .item .votacion
+.contenido .item .votacion
 {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
@@ -268,28 +396,31 @@ nav #publicar_nav a
 	top: 100%;
 	width: 96px;
 }
-#contenido .item .votacion a
+.contenido .item .votacion a
 {
 	text-decoration: none;
 }
-#contenido .item .votacion .down:after,
-#contenido .item .votacion .up:after
+.contenido .item .votacion .down:after,
+.contenido .item .votacion .up:after
 {
 	font-family: "icomoon";
 	font-size: 1.5em;
 	vertical-align: bottom;
 }
-#contenido .item .votacion .down:after
+.contenido .item .votacion .down:after
 {
 	color: red;
 	content: "\e001";
 }
-#contenido .item .votacion .up:after
+.contenido .item .votacion .up:after
 {
 	color: green;
 	content: "\e002";
 }
-
+.contenido .item.primero
+{
+	border-bottom: 3px solid #DE5659;
+}
 
 
 
