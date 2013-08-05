@@ -5,15 +5,47 @@
 		margin: 0 auto;
 		max-width: 1200px;
 	}
+	#actividades h2{
+		background: #db585b;
+		color:#fff;
+		font-size:1.4em;
+		font-weight: normal;
+		margin: 2em auto;
+		text-align: center;
+	}
+	#actividades h2 a{
+		color:#fff;
+		text-decoration: none;
+	}
+	#actividades .actividades p{
+		display: inline;
+	}
+	#actividades .actividades .comentarios_actividades
+	{
+		background: #878787;
+		border-radius: 4px;
+		color: white;
+		display: inline;
+		font-size:2em;
+		margin: 1em;
+		padding: 4px;
+		position: relative;
+		text-decoration: none;
+	}
+	#actividades .actividades .comentarios_actividades:after{
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #878787;
+		content: "";
+		right :5px;
+		position: absolute;
+		top:100%;
+	}
+
 	#bienvenida
 	{
-		display: block;
 		border-bottom: 1px solid #CCC;
 		color:#999999;
-		float: right;
-		margin-right: 2%;
-		width: 25%;
-
 	}
 	#bienvenida h2
 	{
@@ -45,5 +77,12 @@
 	#contenido
 	{
 		width: 70%;
+	}
+	#escritorio
+	{
+		display: block;	
+		margin-right: 2%;
+		float: right;
+		width: 25%;
 	}
 }
