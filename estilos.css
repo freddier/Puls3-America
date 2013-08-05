@@ -20,7 +20,7 @@
 
   }
 }
-@-moz-keyframes glow {
+@-moz-keyframes pulse {
   0% {
     -moz-box-shadow: 0 0 25px 3px rgba(34, 188, 224, 0.6);
     
@@ -30,7 +30,7 @@
      0 0 45px 5px rgba(224, 85, 38, 0.8);
   }
 }
-@-o-keyframes glow {
+@-o-keyframes pulse {
   0% {
     box-shadow: 0 0 25px 3px rgba(34, 188, 224, 0.6);
   
@@ -41,7 +41,7 @@
 
   }
 }
-@keyframes glow {
+@keyframes pulse {
   0% {
     box-shadow: 0 0 25px 3px rgba(34, 188, 224, 0.6);
   
