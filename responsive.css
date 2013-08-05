@@ -9,13 +9,16 @@
 	{
 		display: block;
 		border-bottom: 1px solid #CCC;
+		color:#999999;
 		float: right;
 		margin-right: 2%;
 		width: 25%;
+
 	}
 	#bienvenida h2
 	{
-		color: #434343;
+		color: #606060;
+		margin-bottom: 0;
 	}
 	#bienvenida #mensaje_registro,
 	#bienvenida #registro
@@ -29,10 +32,15 @@
 	#bienvenida #registro
 	{
 		background: #22BCE0;
+		-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.21);
+		-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.21);
+		box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.21);
 		color: white;
 		display: block;
 		font-size: 1.2em;
+		font-weight: bold;
 		padding: 0.5em 0;
+		text-decoration: none;
 	}
 	#contenido
 	{
