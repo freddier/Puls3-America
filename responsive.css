@@ -5,6 +5,7 @@
 		margin: 0 auto;
 		max-width: 1200px;
 	}
+	
 	#bienvenida
 	{
 		display: block;
@@ -38,4 +39,26 @@
 	{
 		width: 70%;
 	}
+}
+@media screen and (min-width: 1200px)
+{
+	
+	nav
+	{
+	border-radius: 0 0 4px 4px;
+	}
+	nav ul li:first-child a
+	{	
+	border-radius: 0 2px 2px 4px;
+	}
+	nav ul li:last-child 
+	{
+	border-radius: 0 2px 4px 0px;
+	}
+	footer
+	{
+	border-radius: 5px 5px 0 0;
+	}
+
+
 }

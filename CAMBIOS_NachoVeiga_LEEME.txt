@@ -1,0 +1,24 @@
+Cambios y añadidos:
+-------------------
+Border radius en varios lugares y en el responsive.css
+Imagenes de Gacela y Avispa, y article asociado, si asististeis al curso de mejorandoweb lo entendereis xD
+Animación en el Logo, Pulse Effect (Azul bonito - naranja rojizo)
+Cambio de posiciones y margenes
+Modificación de floats
+La flecha del avatar ya no se cae al abrir el archivo
+Anchura mínima, los míviles son min 480, y le puse 472px
+Alineamiento de h1 y responsive
+Modificación del navbar, alineamientos, anchura... ahora los li-a son responsive
+Eliminación de la decoración a - añadidos efectos en normal y :hover, text shadows, efecto stroke..
+Utilización de nuevos selectores CSS3
+Añadí una nueva clase para que el cursor se convierta en un pointer al pasar por elementos clickeables.
+
+Comentario de autores y edición en el footer de index.html, el diseño y el maquetado están muy bien, son solo cosas personales, como algunos bordes radius, o el tamaño de alguna cosa,o en css creo que borre un par de ids/clases, me resultaba mas cómodo leerlo a mi manera, ninguna modificación importante.
+
+
+Comentarios
+-----------
+A veces usé .8 algo por costume padding-left: .5em; = 0.5em
+La animación no funciona en Firefox, usé el prefijo -moz de compatiibilidad pero no funciona.
+
+Saludos.
