@@ -5,37 +5,55 @@
 		margin: 0 auto;
 		max-width: 1200px;
 	}
-	#actividades h2{
+	#actividades h2
+	{
 		background: #db585b;
 		color:#fff;
-		font-size:1.4em;
+		font-size:1.1em;
 		font-weight: normal;
-		margin: 2em auto;
+		padding: 0.3em 0;
+		margin: 2em auto 1em auto;
 		text-align: center;
 	}
-	#actividades h2 a{
+	#actividades h2 a
+	{
 		color:#fff;
 		text-decoration: none;
 	}
-	#actividades .actividades p{
-		display: inline;
+	#actividades .actividades
+	{
+		border-bottom: 1px solid #CCC;
+		position: relative;
+		padding: 0.5em 0;
+	}
+	#actividades .actividades p
+	{
+		color:#999999;
+		display: inline-block;
+		margin:0;
+		margin-left: calc(48px + 1em);
+
 	}
 	#actividades .actividades .comentarios_actividades
 	{
-		background: #878787;
+		background: #db585b;
 		border-radius: 4px;
 		color: white;
-		display: inline;
-		font-size:2em;
-		margin: 1em;
+		display: inline-block;
+		font-size:1em;
+		font-weight: bold;
+		margin: 1em 0.5em;
 		padding: 4px;
-		position: relative;
+		position: absolute;
+		text-align: center;
 		text-decoration: none;
+		width: 40px;
 	}
-	#actividades .actividades .comentarios_actividades:after{
+	#actividades .actividades .comentarios_actividades:after
+	{
 		border-left: 5px solid transparent;
 		border-right: 5px solid transparent;
-		border-top: 5px solid #878787;
+		border-top: 5px solid #db585b;
 		content: "";
 		right :5px;
 		position: absolute;
@@ -44,7 +62,7 @@
 
 	#bienvenida
 	{
-		border-bottom: 1px solid #CCC;
+		border-bottom: 1px solid #bebebe;
 		color:#999999;
 	}
 	#bienvenida h2
@@ -78,11 +96,14 @@
 	{
 		width: 70%;
 	}
-	#escritorio
+	#desktop_barra
 	{
-		display: block;	
 		margin-right: 2%;
 		float: right;
 		width: 25%;
+	}
+	.desktop
+	{
+		display: block;	
 	}
 }
