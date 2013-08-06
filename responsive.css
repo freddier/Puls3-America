@@ -21,7 +21,7 @@
 	#contenido
 	{
 		margin:0 auto;
-		width: 100%;
+		width: 97%;
 	}
 
 	#desktop{
@@ -29,7 +29,7 @@
 		display:block;
 		margin:1em auto 0 auto;
 		overflow:hidden;
-		width:100%;
+		width:97%;
 
 	}
 
@@ -48,33 +48,11 @@
 
 	#desktop #bienvenida h2
 	{
-		font-size: 1em;
 		color: #434343;
-		margin:0;
-
-
-	}
-	
-	
-
-	#desktop #bienvenida #registro
-	{
-		background: #22BCE0;
-		color: white;
-		display: block;
 		font-size: 1em;
-		padding: 0.5em 0;
-		box-shadow: 5px 5px 0 #CFCFCF;
-   		-webkit-box-shadow: 5px 5px 0 #CFCFCF;
-   		-moz-box-shadow: 5px 5px 0 #CFCFCF;
-		margin:0 auto;
-		text-align: center;
-		text-decoration: none;
-   		width:70%;
-   		
+		margin:0;
 	}
 	
-
 	#desktop #bienvenida #mensaje_registro
 	{
 		border-bottom: 1px solid #BEBEBE;
@@ -84,12 +62,34 @@
 		
 	}
 
+	#desktop #bienvenida #registro
+	{
+		
+		background: #22BCE0;
+		box-shadow: 5px 5px 0 #CFCFCF;
+   		-webkit-box-shadow: 5px 5px 0 #CFCFCF;
+   		-moz-box-shadow: 5px 5px 0 #CFCFCF;
+		color: white;
+		display: block;
+		font-size: 1em;
+		margin:0 auto;
+		padding: 0.5em 0;
+		text-align: center;
+		text-decoration: none;
+   		width:70%;
+   		
+	}
+	
+
+	
+
 	#desktop #bienvenida #tactividades{
+		border-top: 2px solid #FFF;
+		font-size: .9em;
 		margin-top:-0.89em;
 		padding-top: 2em;
-		border-top: 2px solid #FFF;
 		text-align: center;
-		font-size: .9em;
+		
 	}
 
 	#desktop #bienvenida #tactividades a{
@@ -105,9 +105,9 @@
 
 	#desktop #bienvenida .actividades{
 		border-bottom: 1px solid #D1D1D1;
-		padding-bottom: 1em;
 		font-size: .9em;
 		margin-bottom: 1em;
+		padding-bottom: 1em;		
 	}
 
 	#desktop #bienvenida .actividades p{
@@ -116,19 +116,30 @@
 
 	#desktop #bienvenida .actividades .coments{
 		background-color: #DE5659;
+		border-radius: 5px;
 		color:#FFF;
-		padding:.5em;
 		display:block;
 		float:left;
-		border-radius: 5px;
-		text-decoration: none;
-		margin:1em 1em 0 0;
 		font-weight: bold;
+		margin:1em 1em 0 0;
+		padding:.5em;
+		position:relative;
+		text-decoration: none;
 	}
 
-	
+	#desktop #bienvenida .actividades .coments:before{
+		border-left:5px solid transparent;
+		border-right:5px solid transparent;
+		border-top:5px solid #DE5659;
+		content:"";
+		left:13px;
+		position:absolute;
+		top:100%;
+	}
 
-	
+
+
+
 	#desktop #destacados{
 		
 		display:inline-block;
@@ -146,39 +157,47 @@
 	}
 	#desktop #destacados h2 a{
 		color:#444444;
+		font-size: 16px;
 		text-decoration: none;
 	}
 
-	#desktop #destacados #postprimario{
-
-		background-color: #CECECE;
-		border-bottom: 3px solid #DE5659;
-
+	#desktop #destacados #primario{
+		
+		position:relative;
 	}
 
-	#desktop #destacados #postprimario img{
+	#desktop #destacados #primario figure img{
 		width:100%;
-	}
-
-	#desktop #destacados #titulopostprimario{
-		display:inline-block;
-		vertical-align: top;
-		width:83%;
-		font-size: .9em;
-	}
-
-	#desktop #destacados #votapostprimario{
-		display:inline-block;
-		margin:.5em 0em 1em 1em;
-		vertical-align: top;
-		width:40px;
-	}
-
-	#desktop #destacados #votapostprimario a{
 		display:block;
-		text-decoration: none;
-		font-size: 1.3em;
 	}
+	
+
+	#desktop #destacados #primario figcaption{
+		background-color:rgba(206, 206, 206, 0.80);
+		font-size: 14px;
+		bottom:0;
+		position:absolute;
+		width:100%;
+		
+	}
+
+	
+
+	#desktop #destacados #primario figcaption #votapostprimario{
+		float:left;
+		
+		width:30px;
+		margin:.5em 1em 0 1em;
+		vertical-align: middle;
+
+	}
+
+	#desktop #destacados #primario figcaption #votapostprimario a{
+		font-size: 1.3em;
+		text-decoration: none;
+	}
+
+	
 
 	#desktop #destacados #votapostprimario .up:after
 	{
@@ -197,10 +216,11 @@
 		background-color: #FFF;
 		border-bottom: 3px solid #DE5659;
 		font-size: .9em;
+		margin-bottom: 3em;
 		margin-top:1em;
 		min-height: 128px;
 		position:relative;
-		margin-bottom: 3em;
+		
 	}
 
 
@@ -213,8 +233,9 @@
 
 	
 	#desktop #destacados .postsecundario h2{
-		padding:.5em 0;
 		font-size: 1.1em;
+		padding:.5em 0;
+		
 
 	}
 
@@ -232,8 +253,21 @@
 		background-color: #878787;
 		border-radius: 4px;
 		color:#FFF;
-		padding:4px;
 		margin-left:2em;
+		padding:4px;
+		position:relative;
+		
+	}
+
+	#desktop #destacados .postsecundario .metadatos .comentario:before{
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #878787;
+		content:"";
+		left:10px;
+		position:absolute;
+		top:100%;
+
 	}
 
 	#desktop #destacados .postsecundario .metadatos .guardar:after{
@@ -255,10 +289,10 @@
 	}
 
 	#desktop #destacados .postsecundario .votapostsecundario{
-		position:absolute;
 		background-color: #FFF;
-		padding:.5em 0;
 		border-radius: 0 0 .5em .5em;
+		padding:.5em 0;
+		position:absolute;
 		text-align: center;
 		top:91%;
 		width: 96px;
@@ -283,10 +317,6 @@
 		font-family: "icomoon";		
 
 	}
-
-
-	
-
 
 	#desktop .up,#desktop .down{
 		font-family: "icomoon";

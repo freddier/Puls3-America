@@ -160,7 +160,7 @@ nav #publicar_nav:after
 nav #publicar_nav a
 {
 	display: inline-block;
-	padding: 0.53em 1em;
+	padding: 0.5em 1em;
 	text-decoration: none;
 }
 #bienvenida, #desktop, #destacados
