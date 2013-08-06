@@ -1,21 +1,76 @@
-@media screen and (min-width: 768px)
+@media screen and (min-width: 800px)
 {
 	body
 	{
 		margin: 0 auto;
 		max-width: 1200px;
 	}
+	#actividades h2
+	{
+		background: #db585b;
+		color:#fff;
+		font-size:1.1em;
+		font-weight: normal;
+		padding: 0.3em 0;
+		margin: 2em auto 0.5em auto;
+		text-align: center;
+	}
+	#actividades h2 a
+	{
+		color:#fff;
+		text-decoration: none;
+	}
+	#actividades .actividades
+	{
+		border-bottom: 1px solid #CCC;
+		position: relative;
+		padding: 0.5em 0;
+	}
+	#actividades .actividades p
+	{
+		color:#999999;
+		display: inline-block;
+		font-size: 0.8em;
+		margin:0;
+		margin-left: calc(48px + 1em);
+		min-height: 40px;
+
+	}
+	#actividades .actividades .comentarios_actividades
+	{
+		background: #db585b;
+		border-radius: 4px;
+		color: white;
+		display: inline-block;
+		font-size:1em;
+		font-weight: bold;
+		margin: 0.5em 0.5em;
+		padding: 4px;
+		position: absolute;
+		text-align: center;
+		text-decoration: none;
+		width: 40px;
+	}
+	#actividades .actividades .comentarios_actividades:after
+	{
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #db585b;
+		content: "";
+		right :5px;
+		position: absolute;
+		top:100%;
+	}
+
 	#bienvenida
 	{
-		display: block;
-		border-bottom: 1px solid #CCC;
-		float: right;
-		margin-right: 2%;
-		width: 25%;
+		border-bottom: 1px solid #bebebe;
+		color:#999999;
 	}
 	#bienvenida h2
 	{
-		color: #434343;
+		color: #606060;
+		margin-bottom: 0;
 	}
 	#bienvenida #mensaje_registro,
 	#bienvenida #registro
@@ -29,13 +84,103 @@
 	#bienvenida #registro
 	{
 		background: #22BCE0;
+		-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.21);
+		-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.21);
+		box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.21);
 		color: white;
 		display: block;
 		font-size: 1.2em;
+		font-weight: bold;
 		padding: 0.5em 0;
+		text-decoration: none;
 	}
-	#contenido
+	#contenido .item:first-child
 	{
+		width: 72%;
+		border-color: #db585b;
+
+	}
+	#contenido_destacado
+	{
+		margin:1em; 
 		width: 70%;
+	}
+	#contenido_destacado #item_destacado
+	{
+		background: #fff;
+		border-bottom: 3px #DD4F24 solid;
+		margin-bottom: 1em;
+		position: relative;
+	}
+	#contenido_destacado #item_destacado figure
+	{
+	}
+	#contenido_destacado #item_destacado figure img
+	{
+		width: 100%
+	}
+	#contenido_destacado #item_destacado #item_articulo
+	{
+		bottom: 0;
+		background: #fff;
+		opacity: 0.5;
+		min-height: 128px;
+		position: absolute;
+		width: 100%;
+	}
+	#contenido_destacado #item_destacado #item_articulo h2
+	{
+		font-size: 1.5em;
+		font-style: italic;
+		padding: 0.5em 0.5em 0;
+	}
+	#contenido_destacado #item_destacado #item_articulo h2 a
+	{
+		color: #444;
+	}
+
+
+	#contenido_destacado #item_destacado .votacion_destacado
+	{
+		background: white;
+		margin: 5px;
+		text-align: center;
+		font-size: 1.5em;
+		float: left;
+		width: 60px;
+	}
+	#contenido_destacado #item_destacado .votacion_destacado a
+	{
+		text-decoration: none;
+	}
+	#contenido_destacado #item_destacado  .votacion_destacado .down:after,
+	#contenido_destacado #item_destacado  .votacion_destacado .up:after
+	{
+		font-family: "icomoon";
+		font-size: 1.8em;
+		vertical-align: bottom;
+	}
+	#contenido_destacado #item_destacado  .votacion_destacado .down:after
+	{
+		color: red;
+		content: "\e001";
+	}
+	#contenido_destacado #item_destacado  .votacion_destacado .up:after
+	{
+		color: green;
+		content: "\e002";
+	}
+
+
+
+	#desktop_barra
+	{
+		margin-right: 2%;
+		float: right;
+		width: 25%;
+	}
+	.desktop
+	{
+		display: block;	
 	}
 }

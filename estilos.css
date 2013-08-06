@@ -12,6 +12,12 @@
 a
 {
 	color: #DD4F24;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #DD4F24;
+	text-decoration: underline;
 }
 body
 {
@@ -42,6 +48,7 @@ header
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+	position: relative;
 }
 header:after{
 	clear: both;
@@ -55,23 +62,22 @@ header figure
 header h1
 {
 	font-size: 20px;
-	font-weight: normal;
 	margin: 1em 85px 1em 100px;
 	display: block;
 }
 header #avatar
 {
+	margin: 1em 1em 0 0;
 	position:  absolute;
 	top: 0;
 	right: 0;
-	margin: 1em 1em 0 0;
 }
 header #avatar figcaption
 {
 	background: #22BCE0;
-	float: right;
 	height: 50px;
 	line-height: 50px;
+	margin-left: 50px;
 }
 header #avatar figcaption:after
 {
@@ -89,9 +95,34 @@ header #logo img
 {
 	width: 80px;
 }
+header #home{
+	background: #22BCE0;
+	border-radius: 0.5em 0.5em 0 0;
+	bottom:0;
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0.5em 0.7em;
+	position: absolute;
+	right: 10em;
+	text-align: left;
+	vertical-align: bottom;
+}
+header #home:after
+{
+	content: "\e002";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.5;
+}
+header #home a{
+	color:#fff;
+	text-decoration: none;
+	margin-right: 2em;
+}
 nav
 {
 	background: #878787;
+	border-top: 4px solid #7f7f7f;
 	font-size: 0.9em;
 }
 nav ul
@@ -103,7 +134,7 @@ nav ul
 nav ul li
 {
 	display: inline-block;
-	margin: 0 1.2em 0 0;
+	margin: -4px 1.2em 0 0;
 	vertical-align: top;
 }
 nav ul li a
@@ -111,6 +142,15 @@ nav ul li a
 	color: white;
 	display: block;
 	padding: 0.5em 0;
+	text-decoration: none;
+}
+nav ul li a:hover
+{
+	text-decoration: underline;
+}
+nav #flechita_nav
+{
+	border-top: 4px solid #25a3be;
 }
 nav #flechita_nav a
 {
@@ -128,6 +168,7 @@ nav #publicar_nav
 {
 	/*i is zorri*/
 	background: #DD4F24;
+	border-top: 4px solid #bd5b38;
 	float: right;
 	margin-right: 0; 
 	padding-right: 1em;
@@ -138,8 +179,9 @@ nav #publicar_nav:after
 	color: rgba(255,255,255,0.5);
 	content:  "\e004";
 	font-family: "icomoon";
-	font-size: 1.8em;
+	font-size: 1.4em;
 	position: absolute;
+	line-height: 1.4em;
 	right: 0;
 	top: 0;
 }
@@ -148,10 +190,6 @@ nav #publicar_nav a
 	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
-}
-#bienvenida
-{
-	display: none;
 }
 #contenido
 {
@@ -189,7 +227,7 @@ nav #publicar_nav a
 	border-right: 5px solid transparent;
 	border-top: 5px solid #878787;
 	content: "";
-	left :10px;
+	right :5px;
 	position: absolute;
 	top:100%;
 }
@@ -231,7 +269,6 @@ nav #publicar_nav a
 #contenido .item .titulo_item a
 {
 	color: #444;
-	text-decoration: none;
 }
 #contenido .item .votacion
 {
@@ -266,6 +303,9 @@ nav #publicar_nav a
 	content: "\e002";
 }
 
+.desktop{
+	display: none;
+}
 
 
 
