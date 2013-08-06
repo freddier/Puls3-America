@@ -12,6 +12,12 @@
 a
 {
 	color: #DD4F24;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #DD4F24;
+	text-decoration: underline;
 }
 body
 {
@@ -136,6 +142,11 @@ nav ul li a
 	color: white;
 	display: block;
 	padding: 0.5em 0;
+	text-decoration: none;
+}
+nav ul li a:hover
+{
+	text-decoration: underline;
 }
 nav #flechita_nav
 {
@@ -258,7 +269,6 @@ nav #publicar_nav a
 #contenido .item .titulo_item a
 {
 	color: #444;
-	text-decoration: none;
 }
 #contenido .item .votacion
 {
@@ -292,6 +302,7 @@ nav #publicar_nav a
 	color: green;
 	content: "\e002";
 }
+
 .desktop{
 	display: none;
 }

@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px)
+@media screen and (min-width: 800px)
 {
 	body
 	{
@@ -12,7 +12,7 @@
 		font-size:1.1em;
 		font-weight: normal;
 		padding: 0.3em 0;
-		margin: 2em auto 1em auto;
+		margin: 2em auto 0.5em auto;
 		text-align: center;
 	}
 	#actividades h2 a
@@ -30,8 +30,10 @@
 	{
 		color:#999999;
 		display: inline-block;
+		font-size: 0.8em;
 		margin:0;
 		margin-left: calc(48px + 1em);
+		min-height: 40px;
 
 	}
 	#actividades .actividades .comentarios_actividades
@@ -42,7 +44,7 @@
 		display: inline-block;
 		font-size:1em;
 		font-weight: bold;
-		margin: 1em 0.5em;
+		margin: 0.5em 0.5em;
 		padding: 4px;
 		position: absolute;
 		text-align: center;
@@ -92,10 +94,85 @@
 		padding: 0.5em 0;
 		text-decoration: none;
 	}
-	#contenido
+	#contenido .item:first-child
 	{
+		width: 72%;
+		border-color: #db585b;
+
+	}
+	#contenido_destacado
+	{
+		margin:1em; 
 		width: 70%;
 	}
+	#contenido_destacado #item_destacado
+	{
+		background: #fff;
+		border-bottom: 3px #DD4F24 solid;
+		margin-bottom: 1em;
+		position: relative;
+	}
+	#contenido_destacado #item_destacado figure
+	{
+	}
+	#contenido_destacado #item_destacado figure img
+	{
+		width: 100%
+	}
+	#contenido_destacado #item_destacado #item_articulo
+	{
+		bottom: 0;
+		background: #fff;
+		opacity: 0.5;
+		min-height: 128px;
+		position: absolute;
+		width: 100%;
+	}
+	#contenido_destacado #item_destacado #item_articulo h2
+	{
+		font-size: 1.5em;
+		font-style: italic;
+		padding: 0.5em 0.5em 0;
+	}
+	#contenido_destacado #item_destacado #item_articulo h2 a
+	{
+		color: #444;
+	}
+
+
+	#contenido_destacado #item_destacado .votacion_destacado
+	{
+		background: white;
+		margin: 5px;
+		text-align: center;
+		font-size: 1.5em;
+		float: left;
+		width: 60px;
+	}
+	#contenido_destacado #item_destacado .votacion_destacado a
+	{
+		text-decoration: none;
+	}
+	#contenido_destacado #item_destacado  .votacion_destacado .down:after,
+	#contenido_destacado #item_destacado  .votacion_destacado .up:after
+	{
+		font-family: "icomoon";
+		font-size: 1.8em;
+		vertical-align: bottom;
+	}
+	#contenido_destacado #item_destacado  .votacion_destacado .down:after
+	{
+		color: red;
+		content: "\e001";
+	}
+	#contenido_destacado #item_destacado  .votacion_destacado .up:after
+	{
+		color: green;
+		content: "\e002";
+	}
+
+
+
 	#desktop_barra
 	{
 		margin-right: 2%;
