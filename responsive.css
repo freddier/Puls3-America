@@ -2,13 +2,13 @@
 /*Cuando el viewport(la parte visible de la página) Sea mayor a 768px:*/
 @media screen and (min-width: 768px)
 {
-	/*El margin del body sea 0*/
+	/*Que el margin del body sea 0*/
 	body
 	{
 		margin: 0 auto;
 		
 	}
-	/*Aparezca la bienvenida que desaparecimos por la línea 222*/
+	/*Que aparezca la bienvenida que desaparecimos por la línea 222*/
 	#bienvenida
 	{
 		display: block;
@@ -37,7 +37,8 @@
 	}
 	#bienvenida #actividad .notificacion
 	{
-		border-bottom: 1.3px solid #CCC
+		border-bottom: 1.3px solid #CCC;
+		color:#b3b3b3;
 	}
 	#bienvenida #actividad .notificacion .actividad_mensaje
 	{
@@ -98,7 +99,7 @@
 	{
 		display: block;
 	}
-	/*Hacer que la imagen grande ocupe el 100%("de su contenedor").*/
+	/*Hacer que la imagen grande ocupe el 100%(de su contenedor).*/
 	#contenido #item_resaltado img
 	{ 
 		width: 100%; 
@@ -132,4 +133,5 @@
 		display: none;
 	}
 }
-/*¡Y ya! :-D*/
+/*¡Y ya! :D*/
+/*Cualquier duda la puedes comentar, y yo u otra persona te la responderá */

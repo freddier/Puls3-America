@@ -14,6 +14,7 @@
 a
 {
 	color: #DD4F24;
+	text-decoration: none;
 }
 /*Características básicas del body*/
 body
@@ -56,8 +57,9 @@ header a div
 	/*El redondeado del borde */
 	border-radius: 3px 3px 0 0;
 	color: white;
+	font-size: 1.1em;
 	/*El alto*/
-	height: 22px;
+	height: 25px;
 	/*El ancho*/
 	width:80px;
 	position: absolute;
@@ -66,7 +68,8 @@ header a div
 	/*Espacio desde la izquierda*/
 	left: 60%;
 	padding: 0 10px;
-	font-size: 1.1em;
+	vertical-align: middle;
+	
  
 }
 /*Agregar las tipografías especiales :o*/
@@ -88,7 +91,9 @@ header a div:after
 /*Organizando algunos bugs del header...*/
 header:after
 {
-	clear: both;content: "";display: block;
+	clear: both;
+	content: "";
+	display: block;
 }
 /*cuando el cursor esté sobre el header*/
 header a div:hover
@@ -238,6 +243,39 @@ nav #publicar_nav:hover
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
+#contenido  #item_resaltado
+{
+	padding: 0;
+	margin: 0 auto;
+}
+#contenido  #item_resaltado #imagen_grande
+{
+	font-size: 1.3em;
+	position: relative;
+}
+#contenido  #item_resaltado #imagen_grande #info_resaltada
+{
+	background: rgba(225,225,225,0.8);
+	bottom:5px;
+	border-bottom: 3px solid #DD4F24;
+	position: absolute;
+	text-align: left;
+	width: 100%
+}
+#contenido  #item_resaltado .votacion
+{
+	float: left;
+	height: 3em;
+	text-align: center;
+
+	width: 15%;
+	vertical-align: middle;
+}
+#contenido  #item_resaltado #datos_resaltados
+{
+	float: right;
+	width: 85%;
+}
 #contenido  .datos_item
 
 {
@@ -306,7 +344,7 @@ nav #publicar_nav:hover
 	color: #444;
 	text-decoration: none;
 }
-#contenido  .votacion
+#contenido  .item .votacion
 {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
@@ -343,9 +381,3 @@ nav #publicar_nav:hover
 	/*Borrando algunas cosas que apareceremos cuando sea un desktop...*/
 	display: none;
 }
-
-
-
-
-
-
