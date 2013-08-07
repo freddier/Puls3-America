@@ -1,59 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<!--PD: El FavIcon No me funciona con el open in browser...D:-->
+	<!--Insertando el Favicon-->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<meta charset="utf-8" />
-
-	<meta name="viewport" 
-		  content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-	<title>Puls3: Comunidad online de gente pro y (no sé que más escribir)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!--Título de la página-->
+	<title>Puls3: Comunidad online de gente pro y (no sé qué más escribir)</title>
+	<!--Insertando el Normalize-->
 	<link rel="stylesheet" href="normalize.css" />
+	<!--Insertando la fuente principal :D-->
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+	<!--Conectando con los estilos(css)-->
 	<link rel="stylesheet" href="estilos.css" />
+	<!--Y ahora con los estilos para el responsive design-->
 	<link rel="stylesheet" href="responsive.css" />
-
 </head>
 <body>
-	
+	<!--Aquí viene el header :o-->
 	<header>
+		<!--El logo-->
 		<figure id="logo">
 			<img src="logo.png" />
 		</figure>
+		<!--El título del header-->
 		<h1 id="titulo_header">Puls3: Comunidad de gente cool, atractiva y millonaria</h1>
+		<!--El avatar-->
 		<figure id="avatar">
 			<img src="avatar.jpg" />
 			<figcaption></figcaption>
 		</figure>
-		<div>
-			Home
-		</div>
+		<!--El botón para ir al home-->
+		<a href="#" title="Home">
+			<div>
+				Home
+			</div>
+		</a>
 	</header>
+	<!--La barra de navegación-->
 	<nav>
+		<!--Y los diferentes botones-->
 		<ul>
 			<li id="flechita_nav"><a href="#"></a></li>
-			<li><a href="#">Python</a></li>
-			<li><a href="#">HTML5</a></li>
-			<li><a href="#">Javascript</a></li>
-			<li><a href="#">CSS3</a></li>
-			<li><a href="#">Django</a></li>
-			<li id="publicar_nav"><a href="#">Publicar</a></li>
+			<li class="con_hover"><a href="#" title="Python">Python</a></li>
+			<li class="con_hover"><a href="#" title="HTML5">HTML5</a></li>
+			<li class="con_hover"><a href="#" title="Javascript">Javascript</a></li>
+			<li class="con_hover"><a href="#" title="CSS3">CSS3</a></li>
+			<li class="con_hover"><a href="#" title="Django">Django</a></li>
+			<li id="publicar_nav"><a href="#" title="Publicar">Publicar</a></li>
 		</ul>
 	</nav>
-	<aside id="bienvenida">
-		<h2>Hola, registrate!</h2>
-		<p>Es importante registrarte porque LOL!</p>
-		<a id="registro" href="#">Registrate acá</a>
-		<p id="mensaje_registro">En serio, registrate por favor</p>
-		<video width="300" controls>
-			<source src="happyfit.webm" type="video/webm" />
-			<source src="happyfit.mp4" type="video/mp4" />
-			<p>SU NAVEGADOR ES VIEJO DE COJONES!!</p>
-		</video> 
-	</aside>
+	<!--El registro y las notificaciones de actividad(Exclusivas para Desktops y tablets[Algunas]-->
+	<section id="bienvenida">
+		<!--El botón e información de registro-->
+		<aside id="registro">
+			<h2 id="mensaje">Hola, ¡regístrate!</h2>
+			<p>Si no te registras, un pequeño reno montés se atascará con una rama en medio de un lúgubre paisaje Canadiense y probablemente morirá de depresión.D:</p>
+			<a id="b_registro" href="#" title="¡Regístrate!">Regístrate aquí</a>
+			<p id="mensaje_registro">En serio, regístrate por favor</p>
+		</aside>
+		<!--La actividad-->
+		<aside id="actividad">
+			<a id="b_actividad" href="#" title="Actividad">Actividad</a>
+			<!--Ahora las notificaciones :)-->
+			<article class="notificacion">
+				<a class="comentarios_item" href="#">3141</a>
+				<p id ="actividad_mensaje">behind the word mountains, far from VokaliaFar far away, behind the word mountains, far from hear.</p>
+			</article>
+			<!--Y otras cuantas-->
+			<article class="notificacion">
+				<a class="comentarios_item" href="#">3141</a>
+				<p id ="actividad_mensaje">Far far away, behind the word mountains, far from VokaliaFar far away, behind the word mountains, far from VokaliaFar far away, behind the word mountains.</p>
+			</article>
+			<article class="notificacion">
+				<a class="comentarios_item" href="#">3141</a>
+				<p id ="actividad_mensaje">Far far away, behind the word mountains, far from VokaliaFar far away, behind the word mountains, far from VokaliaFar far away, behind the word mountains, far from VokaliaFar far away, behind the word mountains, far from Vokalia.</p>
+			</article>
+		</aside>
+	</section>
+	<!--Los artículos, noticias o lo que se supone que sean-->
 	<section id="contenido">
+		<!--Un artículo(Éste es especial :3, es el resaltado que sólo se verá en desktops)-->
+		<article id="item_resaltado">
+			<!--La imagen grande-->
+			<figure>
+				<img src="imagen-grande.jpg"/>
+			</figure>
+			<!--El título del artículo-->
+			<h2 class="titulo_item">
+				<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
+			</h2>
+			<!--El autor...-->
+			<p class="autor_item">
+				Por <a href="#">Freddy Vega</a>
+			</p>
+			<!--Los datos-->
+			<p class="datos_item">
+				<!--La(s) etiqueta(s) del artículo-->
+				<a class="tag_item" href="#">categoria</a>
+				<!--La fecha en que se publicó el artículo-->
+				<span class="fecha_item">Hace <strong>5</strong> min</span>
+				<!--El link para ver los comentarios que tenga el artículo-->
+				<a class="comentarios_item" href="#">455</a>
+				<!--Botón de "añadir a favoritos"-->
+				<a class="guardar_item" href="#"></a>
+			</p>
+			<!--Control de votos-->
+			<p class="votacion">
+				<a class="up" href="#"></a>
+				3141
+				<a class="down" href="#"></a>
+			</p>
+		</article>
+		<!--De aquí siguen artículos comunes y corrientes :(-->
 		<article class="item">
+
 			<figure class="imagen_item">
 				<img src="imagen.jpg" />
 			</figure>
@@ -154,22 +215,24 @@
 			<p class="datos_item">
 				<a class="tag_item" href="#">categoria</a>
 				<span class="fecha_item">Hace <strong>5</strong> min</span>
-				<a class="comentarios_item" href="#">455</a>
+				<a class="comentarios_item" href="#" title="Comentarios">455</a>
 				<a class="guardar_item" href="#"></a>
 			</p>
 			<p class="votacion">
-				<a class="up" href="#"></a>
+				<a class="up" href="#" title="Votar positivo"></a>
 				3141
-				<a class="down" href="#"></a>
+				<a class="down" href="#" title="Votar negativo"></a>
 			</p>
 		</article>
 	</section>
+	<!--Aquí está el footer-->
 	<footer>
 		<p><strong>Powered by Platzi!</strong></p>
 		<p>Mejorando.la 2013 ®</p>
 	</footer>
 </body>
 </html>
+<!--Y ya está toda la estructura de la página =-D-->
 
 
 
