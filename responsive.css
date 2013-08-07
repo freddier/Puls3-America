@@ -1,41 +1,137 @@
+/*Y, ahora. ¡tan tan tan!... R-e-s-p-o-n-s-i-v-e ¡DESIGN!*/
+/*Cuando el viewport(la parte visible de la página) Sea mayor a 768px:*/
 @media screen and (min-width: 768px)
 {
+	/*Que el margin del body sea 0*/
 	body
 	{
 		margin: 0 auto;
-		max-width: 1200px;
+		
 	}
+	/*Que aparezca la bienvenida que desaparecimos por la línea 222*/
 	#bienvenida
 	{
 		display: block;
-		border-bottom: 1px solid #CCC;
+
 		float: right;
 		margin-right: 2%;
+		/*Y ocupe el 25% del viewport*/
 		width: 25%;
 	}
-	#bienvenida h2
+	/*Explicando cómo se deberán ver algunas cosas...*/
+	#bienvenida #actividad
 	{
-		color: #434343;
+		border-bottom: 1.3px solid #CCC;
 	}
-	#bienvenida #mensaje_registro,
-	#bienvenida #registro
+
+	#bienvenida #actividad #b_actividad 
 	{
-		text-align: center;
-	}
-	#bienvenida #mensaje_registro
-	{
-		font-size: 0.8em;
-	}
-	#bienvenida #registro
-	{
-		background: #22BCE0;
+		background: #DE5659;
+		border-radius: 1px;
 		color: white;
 		display: block;
 		font-size: 1.2em;
 		padding: 0.5em 0;
+		text-align: center;
+		text-decoration: none;
 	}
+	#bienvenida #actividad .notificacion
+	{
+		border-bottom: 1.3px solid #CCC;
+		color:#b3b3b3;
+	}
+	#bienvenida #actividad .notificacion .actividad_mensaje
+	{
+		
+		display: inline-block;
+		float: right;
+		vertical-align: center;
+		width: 75%
+	}
+	#bienvenida #actividad .notificacion .comentarios_item
+	{
+		background: #de5659;
+		border-radius: 4px;
+		color: white;
+		display: inline-block;
+		float: left;
+		margin-right: 2em;
+		padding: 4px;
+		position: relative;
+		text-decoration: none;
+		vertical-align: center;
+	}
+	#bienvenida #actividad .notificacion .comentarios_item:after
+	{
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #de5659;
+		content: "";
+		left :10px;
+		position: absolute;
+		top:100%;
+	}
+	#bienvenida #registro #b_registro
+	{
+		background: #06bbe1;
+		border-radius: 1px;
+		color: white;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.5em 0;
+		text-align: center;
+		text-decoration: none;
+	}
+	#bienvenida #registro #mensaje_registro
+	{
+		font-size: 0.8em;
+		color: #b3b3b3;
+		text-align:center;
+		font-style: italic;
+		
+	}
+	/*Limitando el ancho del contenido al 70% del viewport*/
 	#contenido
 	{
 		width: 70%;
 	}
+	#contenido #item_resaltado
+	{
+		display: block;
+	}
+	/*Hacer que la imagen grande ocupe el 100%(de su contenedor).*/
+	#contenido #item_resaltado img
+	{ 
+		width: 100%; 
+	}
+
 }
+/*Ahora. Si la resolución llega a ser menor a 475px:*/
+@media screen and (max-width: 475px)
+{
+	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/
+	nav #publicar_nav
+	{
+		background: #DD4F24;
+		float:none;
+		margin-right: 0; 
+		padding-right: 1em;
+		position: relative;
+	}
+}
+/*Si la resolución llegase a bajar de 350px:*/
+@media screen and (max-width: 350px)
+{
+	/*El título del header dejará de mostrarse*/
+	#titulo_header
+	{
+		display: none;
+	}
+	/*Y la fecha de publicación de los artículos desaparecerá D: */
+	#contenido .datos_item .fecha_item
+	{
+		display: none;
+	}
+}
+/*¡Y ya! :D*/
+/*Cualquier duda la puedes comentar, y yo u otra persona te la responderá */

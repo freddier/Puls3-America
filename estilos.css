@@ -1,3 +1,5 @@
+/*Y ahora los estilos:*/
+/*Se importan las fuentes especiales...*/
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot');
@@ -8,22 +10,26 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+/*Se le da color a los links*/
 a
 {
 	color: #DD4F24;
+	text-decoration: none;
 }
+/*Características básicas del body*/
 body
 {
+	/*Color de fondo de la página.*/
 	background: #EFEFEF;
+	/*Color de la fuente*/
 	color: #4C4C4C;
+	/*Tipografía(PT Sans), y, en caso de que no se pueda cargar esa...Arial*/
 	font-family: "PT Sans", Arial;
+	/*Tamaño de fuente*/
 	font-size: 16px;
-	margin: 0;
+
 }
-/*
-comentario de lo que sea
-*/
+/*Y del footer...[De auí todo es muy intuitivo, así que sólo explicaré lo importante]*/
 footer
 {
 	background: #434343;
@@ -32,6 +38,7 @@ footer
 	text-align: center;
 	width: 100%;
 }
+/*Anidados: estamos diciendo que le aplique los estilos a el párrafo que esté dentro del footer*/
 footer p
 {
 	margin: 0;
@@ -42,11 +49,56 @@ header
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+	position: relative;
 }
-header:after{
+header a div
+{
+	background-color: #22BCE0;
+	/*El redondeado del borde */
+	border-radius: 3px 3px 0 0;
+	color: white;
+	font-size: 1.1em;
+	/*El alto*/
+	height: 25px;
+	/*El ancho*/
+	width:80px;
+	position: absolute;
+	/*Espacio desde abajo*/
+	bottom: 0;
+	/*Espacio desde la izquierda*/
+	left: 60%;
+	padding: 0 10px;
+	vertical-align: middle;
+	
+ 
+}
+/*Agregar las tipografías especiales :o*/
+/*Despues del div que contiene el link que está en el header...*/
+header a div:after
+{
+	/*Agregar la "letra":*/
+	content: "\e002";
+	/*50% de opacidad*/
+	opacity: 0.5;
+	/*Y la fuente(Lo más importante)que sabe a qué caracter se refiere*/
+	font-family: "icomoon";
+	/*Que se pegue a la derecha*/
+	float: right;
+	/*Y que pase por toda la mitad*/
+    line-height: 22px;
+	
+}
+/*Organizando algunos bugs del header...*/
+header:after
+{
 	clear: both;
 	content: "";
 	display: block;
+}
+/*cuando el cursor esté sobre el header*/
+header a div:hover
+{
+	background-color: #20B1D3
 }
 header figure
 {
@@ -73,6 +125,7 @@ header #avatar figcaption
 	height: 50px;
 	line-height: 50px;
 }
+/*Más tipografías especiales...*/
 header #avatar figcaption:after
 {
 	content: "\e001";
@@ -94,8 +147,10 @@ nav
 	background: #878787;
 	font-size: 0.9em;
 }
+
 nav ul
 {
+	/*Eliminando los puntos de los li(List items)*/
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -103,14 +158,27 @@ nav ul
 nav ul li
 {
 	display: inline-block;
-	margin: 0 1.2em 0 0;
+	padding: 0 0.6em;
 	vertical-align: top;
+	margin: 0;
 }
 nav ul li a
 {
 	color: white;
 	display: block;
 	padding: 0.5em 0;
+	text-decoration: none;
+
+}
+nav ul li:hover
+{
+
+	background-color: #7C7C7C;
+}
+nav #flechita_nav 
+{
+	padding-left: 0; 
+	padding-right: 0; 
 }
 nav #flechita_nav a
 {
@@ -124,14 +192,20 @@ nav #flechita_nav a:after
 	font-family: "icomoon";
 	opacity: 0.6;
 }
+
 nav #publicar_nav
 {
-	/*i is zorri*/
 	background: #DD4F24;
 	float: right;
 	margin-right: 0; 
 	padding-right: 1em;
 	position: relative;
+}
+nav #publicar_nav a
+{
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
 }
 nav #publicar_nav:after
 {
@@ -143,11 +217,10 @@ nav #publicar_nav:after
 	right: 0;
 	top: 0;
 }
-nav #publicar_nav a
+
+nav #publicar_nav:hover
 {
-	display: inline-block;
-	padding: 0.5em 1em;
-	text-decoration: none;
+	background: #FF5B29;
 }
 #bienvenida
 {
@@ -165,16 +238,51 @@ nav #publicar_nav a
 	min-height: 128px;
 	position: relative;
 }
-#contenido .item p
+#contenido  p
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
-#contenido .item .datos_item
+#contenido  #item_resaltado
+{
+	padding: 0;
+	margin: 0 auto;
+}
+#contenido  #item_resaltado #imagen_grande
+{
+	font-size: 1.3em;
+	position: relative;
+}
+#contenido  #item_resaltado #imagen_grande #info_resaltada
+{
+	background: rgba(225,225,225,0.8);
+	bottom:5px;
+	border-bottom: 3px solid #DD4F24;
+	position: absolute;
+	text-align: left;
+	width: 100%
+}
+#contenido  #item_resaltado .votacion
+{
+	float: left;
+	height: 3em;
+	text-align: center;
+
+	width: 15%;
+	vertical-align: middle;
+}
+#contenido  #item_resaltado #datos_resaltados
+{
+	float: right;
+	width: 85%;
+}
+#contenido  .datos_item
+
 {
 	text-align: right;
 }
-#contenido .item .datos_item .comentarios_item
+#contenido  .datos_item .comentarios_item
+
 {
 	background: #878787;
 	border-radius: 4px;
@@ -182,9 +290,11 @@ nav #publicar_nav a
 	margin: 0 0 0 2em;
 	padding: 4px;
 	position: relative;
+	/*Eliminando toda decoración del texto*/
 	text-decoration: none;
 }
-#contenido .item .datos_item .comentarios_item:after{
+#contenido .datos_item .comentarios_item:after
+{
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #878787;
@@ -204,7 +314,8 @@ nav #publicar_nav a
 	content: "\e003";
 	font-family: "icomoon";
 }
-#contenido .item .datos_item .tag_item
+#contenido .datos_item .tag_item
+
 {
 	background: #22BCE0;
 	border-radius: 0.5em;
@@ -213,27 +324,27 @@ nav #publicar_nav a
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
-#contenido .item .imagen_item
+#contenido  .imagen_item
 {
 	float: left;
 	margin: 0 1em 0 0;
 }
-#contenido .item .imagen_item img
+#contenido  .imagen_item img
 {
 	width: 96px;
 }
-#contenido .item .titulo_item
+#contenido .titulo_item
 {
 	font-size: 1em;
 	font-style: italic;
 	padding: 0.5em 0.5em 0;
 }
-#contenido .item .titulo_item a
+#contenido  .titulo_item a
 {
 	color: #444;
 	text-decoration: none;
 }
-#contenido .item .votacion
+#contenido  .item .votacion
 {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
@@ -244,33 +355,29 @@ nav #publicar_nav a
 	top: 100%;
 	width: 96px;
 }
-#contenido .item .votacion a
+#contenido .votacion a
 {
 	text-decoration: none;
 }
-#contenido .item .votacion .down:after,
-#contenido .item .votacion .up:after
+#contenido  .votacion .down:after,
+#contenido  .votacion .up:after
 {
 	font-family: "icomoon";
 	font-size: 1.5em;
 	vertical-align: bottom;
 }
-#contenido .item .votacion .down:after
+#contenido  .votacion .down:after
 {
 	color: red;
 	content: "\e001";
 }
-#contenido .item .votacion .up:after
+#contenido .votacion .up:after
 {
 	color: green;
 	content: "\e002";
 }
-
-
-
-
-
-
-
-
-
+#item_resaltado
+{
+	/*Borrando algunas cosas que apareceremos cuando sea un desktop...*/
+	display: none;
+}
