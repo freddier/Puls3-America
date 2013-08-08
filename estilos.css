@@ -138,6 +138,11 @@ header #avatar img
 	float: left;
 	width: 50px;
 }
+header #logo
+{
+	max-height: 80px;
+	width: 100px;
+}
 header #logo img
 {
 	width: 80px;
@@ -226,11 +231,11 @@ nav #publicar_nav:hover
 {
 	display: none;
 }
-#contenido
+
 {
 	margin: 1em;
 }
-#contenido .item
+ .item
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
@@ -238,22 +243,81 @@ nav #publicar_nav:hover
 	min-height: 128px;
 	position: relative;
 }
+#contenido  p,
 #contenido  p
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
-#contenido  #item_resaltado
+ .primer_item
+{
+	background: white;
+	border-bottom: 3px #de5659 solid;
+	margin-bottom: 3em;
+	min-height: 128px;
+	padding-right: 1em;
+	position: relative;
+}
+  .primer_item .votacion
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 3px 0 0 0;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 96px;
+}
+ .primer_item .votacion a
+{
+	text-decoration: none;
+}
+ .primer_item .votacion .down:after,
+ .primer_item .votacion .up:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+ .primer_item .votacion .down:after
+{
+	color: red;
+	content: "\e001";
+}
+ .primer_item .votacion .up:after
+{
+	color: green;
+	content: "\e002";
+}
+ .primer_item .datos_item .guardar_item
+{
+	margin: 0 1em;
+	text-decoration: none;
+}
+ .primer_item .datos_item .guardar_item:after
+{
+	color: #FD5;
+	content: "\e003";
+	font-family: "icomoon";
+}
+/****************************************************/
+  #item_resaltado
 {
 	padding: 0;
 	margin: 0 auto;
 }
-#contenido  #item_resaltado #imagen_grande
+  #item_resaltado #votacion
+{
+	padding: 0;
+	margin: 0 auto;
+}
+  #item_resaltado #imagen_grande
 {
 	font-size: 1.3em;
 	position: relative;
 }
-#contenido  #item_resaltado #imagen_grande #info_resaltada
+  #item_resaltado #imagen_grande #info_resaltada
 {
 	background: rgba(225,225,225,0.8);
 	bottom:5px;
@@ -262,7 +326,7 @@ nav #publicar_nav:hover
 	text-align: left;
 	width: 100%
 }
-#contenido  #item_resaltado .votacion
+  #item_resaltado .votacion
 {
 	float: left;
 	height: 3em;
@@ -271,17 +335,17 @@ nav #publicar_nav:hover
 	width: 15%;
 	vertical-align: middle;
 }
-#contenido  #item_resaltado #datos_resaltados
+  #item_resaltado #datos_resaltados
 {
 	float: right;
 	width: 85%;
 }
-#contenido  .datos_item
+  .datos_item
 
 {
 	text-align: right;
 }
-#contenido  .datos_item .comentarios_item
+  .datos_item .comentarios_item
 
 {
 	background: #878787;
@@ -293,28 +357,28 @@ nav #publicar_nav:hover
 	/*Eliminando toda decoración del texto*/
 	text-decoration: none;
 }
-#contenido .datos_item .comentarios_item:after
+ .datos_item .comentarios_item:after
 {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #878787;
 	content: "";
-	left :10px;
+	left :18px;
 	position: absolute;
 	top:100%;
 }
-#contenido .item .datos_item .guardar_item
+ .item .datos_item .guardar_item
 {
 	margin: 0 1em;
 	text-decoration: none;
 }
-#contenido .item .datos_item .guardar_item:after
+ .item .datos_item .guardar_item:after
 {
 	color: #FD5;
 	content: "\e003";
 	font-family: "icomoon";
 }
-#contenido .datos_item .tag_item
+ .datos_item .tag_item
 
 {
 	background: #22BCE0;
@@ -324,27 +388,27 @@ nav #publicar_nav:hover
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
-#contenido  .imagen_item
+  .imagen_item
 {
 	float: left;
 	margin: 0 1em 0 0;
 }
-#contenido  .imagen_item img
+  .imagen_item img
 {
 	width: 96px;
 }
-#contenido .titulo_item
+ .titulo_item
 {
 	font-size: 1em;
 	font-style: italic;
 	padding: 0.5em 0.5em 0;
 }
-#contenido  .titulo_item a
+  .titulo_item a
 {
 	color: #444;
 	text-decoration: none;
 }
-#contenido  .item .votacion
+  .item .votacion
 {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
@@ -355,23 +419,23 @@ nav #publicar_nav:hover
 	top: 100%;
 	width: 96px;
 }
-#contenido .votacion a
+ .votacion a
 {
 	text-decoration: none;
 }
-#contenido  .votacion .down:after,
-#contenido  .votacion .up:after
+  .votacion .down:after,
+  .votacion .up:after
 {
 	font-family: "icomoon";
 	font-size: 1.5em;
 	vertical-align: bottom;
 }
-#contenido  .votacion .down:after
+  .votacion .down:after
 {
 	color: red;
 	content: "\e001";
 }
-#contenido .votacion .up:after
+ .votacion .up:after
 {
 	color: green;
 	content: "\e002";
