@@ -28,6 +28,7 @@ body
 	/*Tamaño de fuente*/
 	font-size: 16px;
 
+
 }
 /*Y del footer...[De auí todo es muy intuitivo, así que sólo explicaré lo importante]*/
 footer
@@ -53,7 +54,7 @@ header
 }
 header a div
 {
-	background-color: #22BCE0;
+	background-color: #06bbe1;
 	/*El redondeado del borde */
 	border-radius: 3px 3px 0 0;
 	color: white;
@@ -96,9 +97,15 @@ header:after
 	display: block;
 }
 /*cuando el cursor esté sobre el header*/
+
+header a div
+{
+	-webkit-transition:background-color 1s ease;
+
+}
 header a div:hover
 {
-	background-color: #20B1D3
+	background-color: #38ABC2;
 }
 header figure
 {
@@ -174,6 +181,11 @@ nav ul li a
 	padding: 0.5em 0;
 	text-decoration: none;
 
+}
+nav ul li
+{
+
+	-webkit-transition:background-color 0.8s linear;
 }
 nav ul li:hover
 {
@@ -307,11 +319,7 @@ nav #publicar_nav:hover
 	padding: 0;
 	margin: 0 auto;
 }
-  #item_resaltado #votacion
-{
-	padding: 0;
-	margin: 0 auto;
-}
+
   #item_resaltado #imagen_grande
 {
 	font-size: 1.3em;
@@ -319,7 +327,7 @@ nav #publicar_nav:hover
 }
   #item_resaltado #imagen_grande #info_resaltada
 {
-	background: rgba(225,225,225,0.8);
+	background: rgba(225,225,225,0.9);
 	bottom:5px;
 	border-bottom: 3px solid #DD4F24;
 	position: absolute;
@@ -423,6 +431,7 @@ nav #publicar_nav:hover
 {
 	text-decoration: none;
 }
+ 
   .votacion .down:after,
   .votacion .up:after
 {

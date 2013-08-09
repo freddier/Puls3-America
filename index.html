@@ -54,89 +54,111 @@
 		</ul>
 	</nav>
 	<!--El registro y las notificaciones de actividad(Exclusivas para Desktops y tablets[Algunas]-->
-	<section id="bienvenida">
+<div id="grupo">
+	<aside id="bienvenida">
 		<!--El botón e información de registro-->
-		<aside id="registro">
-			<h2 id="mensaje">Hola, ¡regístrate!</h2>
-			<p>Si no te registras, un pequeño reno montés se atascará con una rama en medio de un lúgubre paisaje Canadiense y probablemente morirá de depresión.D:</p>
-			<a id="b_registro" href="#" title="¡Regístrate!">Regístrate aquí</a>
-			<p id="mensaje_registro">En serio, regístrate por favor</p>
-		</aside>
+			<aside id="registro">
+				<h2 id="mensaje">Hola, ¡regístrate!</h2>
+				<p>Si no te registras, un pequeño reno montés se atascará con una rama en medio de un lúgubre paisaje Canadiense y probablemente morirá de depresión.D:</p>
+				<a id="b_registro" href="#" title="¡Regístrate!">Regístrate aquí</a>
+				<p id="mensaje_registro">En serio, regístrate por favor</p>
+			</aside>
 		<!--La actividad-->
-		<aside id="actividad">
-			<a id="b_actividad" href="#" title="Actividad">Actividad</a>
+			<aside id="actividad">
+				<!--Título de la actividad-->
+				<a id="b_actividad" href="#" title="Actividad">Actividad</a>
+				<!--La parte scrolleable-->
+				<div id="notificaciones"style="width:100%;overflow-y:scroll;">
+			
 			<!--Ahora las notificaciones :)-->
-			<article class="notificacion">
-				<a class="comentarios_item" href="#">3141</a>
-				<p id ="actividad_mensaje">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-			</article>
-			<!--Y otras cuantas-->
-			<article class="notificacion">
-				<a class="comentarios_item" href="#">3141</a>
+				<article class="notificacion">
+					<a class="comentarios_item" href="#">3141</a>
+					<p id ="actividad_mensaje">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				</article>
+				<!--Y otras cuantas-->
+				<article class="notificacion">
+					<a class="comentarios_item" href="#">3141</a>
 				<p id ="actividad_mensaje"> Excepteur sint occaecat cupidatat non proident, sunt.</p>
-			</article>
-			<article class="notificacion">
-				<a class="comentarios_item" href="#">3141</a>
-				<p id ="actividad_mensaje">exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-			</article>
-		</aside>
-	</section>
-	<!--Los artículos, noticias o lo que se supone que sean-->
-	<section id="contenido">
-	<aside id="70_ancho">
-		<!--Un artículo(Éste es especial :3, es el resaltado que sólo se verá en desktops)-->
-		<article id="item_resaltado">
-			<!--La imagen grande-->
-			<!--Anidamos los datos aquí para luego poder controlarlos con position relative y absolute y crear el efecto que queremos--> 
-			<figure id="imagen_grande">
-				<img src="imagen-grande.jpg"/>
-				<!--Los datos-->
-			<aside id="info_resaltada">
-			<!--Control de votos-->
-				<p class="votacion">
-					<a class="up" href="#"></a></br>
-					45</br>
-					<a class="down" href="#"></a>
-				</p>
-				<aside id ="datos_resaltados">
-				<!--El título del artículo-->
-				<h2 class="titulo_item">
-					<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
-				</h2>
-				<!--El autor...-->
-				<p class="autor_item">
-					Por <a href="#">Freddy Vega</a>
-				</p>
+				</article>
+				<article class="notificacion">
+					<a class="comentarios_item" href="#">3141</a>
+					<p id ="actividad_mensaje">exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</article>
+				<article class="notificacion">
+					<a class="comentarios_item" href="#">3141</a>
+					<p id ="actividad_mensaje">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+				</article>
+				<article class="notificacion">
+					<a class="comentarios_item" href="#">3141</a>
+					<p id ="actividad_mensaje"> Excepteur sint occaecat cupidatat non proident, sunt.</p>
+				</article>
+				<article class="notificacion">
+					<a class="comentarios_item" href="#">3141</a>
+					<p id ="actividad_mensaje">exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</article>
+			</div>
+</aside>
+			</aside>
+		<aside id="contenido">
+			<aside id="70_ancho">
+			<!--Un artículo(Éste es especial :3, es el resaltado que sólo se verá en desktops)-->
+				<article id="item_resaltado">
+				<!--La imagen grande-->
+				<!--Anidamos los datos aquí para luego poder controlarlos con position relative y absolute y crear el efecto que queremos--> 
+					<figure id="imagen_grande">
+						<img src="imagen-grande.jpg"/>
+					<!--Los datos-->
+						<aside id="info_resaltada">
+					<!--Control de votos-->
+							<p class="votacion">
+								<a class="up" href="#"></a></br>
+								45</br>
+								<a class="down" href="#"></a>
+							</p>
+							<aside id ="datos_resaltados">
+							<!--El título del artículo-->
+								<h2 class="titulo_item">
+									<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
+								</h2>
+								<!--El autor...-->
+								<p class="autor_item">
+									Por <a href="#">Freddy Vega</a>
+								</p>
+							</aside>
+						</aside>
+	
+					</figure>
+				
+				</article>
+			<!--El primer artículo(Obviando la imagen grandototota)-->
+				<article class="primer_item">
+					<figure class="imagen_item">
+						<img src="imagen.jpg" />
+					</figure>
+					<h2 class="titulo_item">
+						<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
+					</h2>
+					<p class="autor_item">
+						Por <a href="#">Freddy Vega</a>
+					</p>
+					<p class="datos_item">
+						<a class="tag_item" href="#">categoria</a>
+						<span class="fecha_item">Hace <strong>5</strong> min</span>
+						<a class="comentarios_item" href="#">455</a>
+						<a class="guardar_item" href="#"></a>
+					</p>
+					<p class="votacion">
+						<a class="up" href="#"></a>
+						3141
+						<a class="down" href="#"></a>
+					</p>
+				</article>
 			</aside>
 		</aside>
-			</figure>
-			
-		</article>
-		<!--El primer artículo(Obviando la imagen grandototota)-->
-		<article class="primer_item">
-			<figure class="imagen_item">
-				<img src="imagen.jpg" />
-			</figure>
-			<h2 class="titulo_item">
-				<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
-			</h2>
-			<p class="autor_item">
-				Por <a href="#">Freddy Vega</a>
-			</p>
-			<p class="datos_item">
-				<a class="tag_item" href="#">categoria</a>
-				<span class="fecha_item">Hace <strong>5</strong> min</span>
-				<a class="comentarios_item" href="#">455</a>
-				<a class="guardar_item" href="#"></a>
-			</p>
-			<p class="votacion">
-				<a class="up" href="#"></a>
-				3141
-				<a class="down" href="#"></a>
-			</p>
-			</article>
-	</aside>
-	</section>
+	
+</div>
+	<!--Los artículos, noticias o lo que se supone que sean-->
+	
 	<section id="contenido_100">
 			<aside id="100_ancho">
 		<article class="item">

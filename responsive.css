@@ -9,7 +9,11 @@
 		
 	}
 	/*Que aparezca la bienvenida que desaparecimos por la línea 222*/
-	#bienvenida
+	#grupo
+	{
+		display: block;
+	}
+	#grupo #bienvenida
 	{
 		display: block;
 
@@ -18,14 +22,17 @@
 		/*Y ocupe el 25% del viewport*/
 		width: 25%;
 	}
+	
 	/*Explicando cómo se deberán ver algunas cosas...*/
-	#bienvenida #actividad
+	#grupo #bienvenida #actividad
 	{
 		display: block;
 		border-bottom: 1.3px solid #CCC;
+		height: 100% ;
+	
 	}
 
-	#bienvenida #actividad #b_actividad 
+	#grupo #bienvenida #actividad #b_actividad 
 	{
 		background: #DE5659;
 		border-radius: 1px;
@@ -36,13 +43,13 @@
 		text-align: center;
 		text-decoration: none;
 	}
-	#bienvenida #actividad .notificacion
+	#grupo #bienvenida #actividad .notificacion
 	{
 		border-bottom: 1.3px solid #CCC;
 		color:#b3b3b3;
 
 	}
-	#bienvenida #actividad .notificacion .actividad_mensaje
+	#grupo #bienvenida #actividad .notificacion .actividad_mensaje
 	{
 		
 		display: block;
@@ -50,7 +57,7 @@
 		vertical-align: middle;
 		width: 75%
 	}
-	#bienvenida #actividad .notificacion .comentarios_item
+	#grupo #bienvenida #actividad .notificacion .comentarios_item
 	{
 		background: #de5659;
 		border-radius: 4px;
@@ -63,7 +70,7 @@
 		text-decoration: none;
 		vertical-align: middle;
 	}
-	#bienvenida #actividad .notificacion .comentarios_item:after
+	#grupo #bienvenida #actividad .notificacion .comentarios_item:after
 	{
 		border-left: 5px solid transparent;
 		border-right: 5px solid transparent;
@@ -73,7 +80,7 @@
 		position: absolute;
 		top:100%;
 	}
-	#bienvenida #registro #b_registro
+	#grupo #bienvenida #registro #b_registro
 	{
 		background: #06bbe1;
 		border-radius: 1px;
@@ -85,7 +92,7 @@
 		text-decoration: none;
 		box-shadow: 1px 3px 0.3px #D4D4D4;
 	}
-	#bienvenida #registro #mensaje_registro
+	#grupo #bienvenida #registro #mensaje_registro
 	{
 		font-size: 0.8em;
 		color: #b3b3b3;
