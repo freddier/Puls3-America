@@ -339,7 +339,7 @@ nav #publicar_nav:hover
 	float: left;
 	height: 3em;
 	text-align: center;
-
+	color: black;
 	width: 15%;
 	vertical-align: middle;
 }
@@ -411,6 +411,16 @@ nav #publicar_nav:hover
 	font-style: italic;
 	padding: 0.5em 0.5em 0;
 }
+.tooltip .titulo_item a
+{
+	color: #575757;
+	text-decoration: none;
+}
+.tooltip p{
+	padding-bottom: 2em;
+	color:#000;
+}
+
   .titulo_item a
 {
 	color: #444;

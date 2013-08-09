@@ -12,6 +12,7 @@
 	#grupo
 	{
 		display: block;
+		
 	}
 	#grupo #bienvenida
 	{
@@ -21,15 +22,17 @@
 		margin-right: 2%;
 		/*Y ocupe el 25% del viewport*/
 		width: 25%;
+	
 	}
 	
 	/*Explicando cómo se deberán ver algunas cosas...*/
 	#grupo #bienvenida #actividad
 	{
-		display: block;
+		display: inline-block;
 		border-bottom: 1.3px solid #CCC;
-		height: 100% ;
-	
+		
+
+
 	}
 
 	#grupo #bienvenida #actividad #b_actividad 

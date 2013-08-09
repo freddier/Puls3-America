@@ -9,6 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<!--Título de la página-->
 	<title>Puls3: Comunidad online de gente pro y (no sé qué más escribir)</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="res/css/style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<!--Añadiendo el Normalize-->
 	<link rel="stylesheet" href="normalize.css" />
 	<!--Insertando la tipografía principal :D-->
@@ -53,6 +55,7 @@
 			<li id="publicar_nav"><a href="#" title="Publicar">Publicar</a></li>
 		</ul>
 	</nav>
+	
 	<!--El registro y las notificaciones de actividad(Exclusivas para Desktops y tablets[Algunas]-->
 <div id="grupo">
 	<aside id="bienvenida">
@@ -64,11 +67,12 @@
 				<p id="mensaje_registro">En serio, regístrate por favor</p>
 			</aside>
 		<!--La actividad-->
+		<div>
 			<aside id="actividad">
 				<!--Título de la actividad-->
 				<a id="b_actividad" href="#" title="Actividad">Actividad</a>
 				<!--La parte scrolleable-->
-				<div id="notificaciones"style="width:100%;overflow-y:scroll;">
+				<div id="notificaciones"style="height:200px;width:100%;overflow-y:scroll;">
 			
 			<!--Ahora las notificaciones :)-->
 				<article class="notificacion">
@@ -97,37 +101,154 @@
 					<p id ="actividad_mensaje">exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
 				</article>
 			</div>
-</aside>
-			</aside>
+		</aside>
+	</aside>
 		<aside id="contenido">
 			<aside id="70_ancho">
 			<!--Un artículo(Éste es especial :3, es el resaltado que sólo se verá en desktops)-->
 				<article id="item_resaltado">
 				<!--La imagen grande-->
 				<!--Anidamos los datos aquí para luego poder controlarlos con position relative y absolute y crear el efecto que queremos--> 
-					<figure id="imagen_grande">
-						<img src="imagen-grande.jpg"/>
-					<!--Los datos-->
-						<aside id="info_resaltada">
+					<div class="container">
+	<div id="content-slider">
+    	<div id="slider" >
+        	<div id="mask">
+            <ul>
+           	<li id="first" class="firstanimation">
+            <a href="#">
+            <img src="images/img_1.jpg" alt="Cougar"/>
+            </a>
+            <div class="tooltip">
+            	<aside id="info_resaltada">
 					<!--Control de votos-->
-							<p class="votacion">
-								<a class="up" href="#"></a></br>
-								45</br>
-								<a class="down" href="#"></a>
-							</p>
-							<aside id ="datos_resaltados">
-							<!--El título del artículo-->
-								<h2 class="titulo_item">
-									<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
-								</h2>
-								<!--El autor...-->
-								<p class="autor_item">
-									Por <a href="#">Freddy Vega</a>
-								</p>
-							</aside>
-						</aside>
-	
-					</figure>
+					<p class="votacion">
+						<a class="up" href="#"></a></br>
+						45</br>
+						<a class="down" href="#"></a>
+					</p>
+					<aside id ="datos_resaltados">
+					<!--El título del artículo-->
+						<h2 class="titulo_item" >
+							<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
+						</h2>
+						<!--El autor...-->
+						<p class="autor_item">
+							Por <a href="#">Freddy Vega</a>
+						</p>
+					</aside>
+				</aside>
+            </div>
+            </li>
+
+            <li id="second" class="secondanimation">
+            <a href="#">
+            <img src="images/img_2.jpg" alt="Lions"/>
+            </a>
+            <div class="tooltip">
+            	<aside id="info_resaltada">
+					<!--Control de votos-->
+					<p class="votacion">
+						<a class="up" href="#"></a></br>
+						45</br>
+						<a class="down" href="#"></a>
+					</p>
+					<aside id ="datos_resaltados">
+					<!--El título del artículo-->
+						<h2 class="titulo_item">
+							<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
+						</h2>
+						<!--El autor...-->
+						<p class="autor_item">
+							Por <a href="#">Freddy Vega</a>
+						</p>
+					</aside>
+				</aside>
+            </div>
+            </li>
+            
+            <li id="third" class="thirdanimation">
+            <a href="#">
+            <img src="images/img_3.jpg" alt="Snowalker"/>
+            </a>
+            <div class="tooltip">
+            	<aside id="info_resaltada">
+					<!--Control de votos-->
+					<p class="votacion">
+						<a class="up" href="#"></a></br>
+						45</br>
+						<a class="down" href="#"></a>
+					</p>
+					<aside id ="datos_resaltados">
+					<!--El título del artículo-->
+						<h2 class="titulo_item">
+							<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
+						</h2>
+						<!--El autor...-->
+						<p class="autor_item">
+							Por <a href="#">Freddy Vega</a>
+						</p>
+					</aside>
+				</aside>
+            </div>
+            </li>
+                        
+            <li id="fourth" class="fourthanimation">
+            <a href="#">
+            <img src="images/img_4.jpg" alt="Howling"/>
+            </a>
+            <div class="tooltip">
+            	<aside id="info_resaltada">
+					<!--Control de votos-->
+					<p class="votacion">
+						<a class="up" href="#"></a></br>
+						45</br>
+						<a class="down" href="#"></a>
+					</p>
+					<aside id ="datos_resaltados">
+					<!--El título del artículo-->
+						<h2 class="titulo_item">
+							<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
+						</h2>
+						<!--El autor...-->
+						<p class="autor_item">
+							Por <a href="#">Freddy Vega</a>
+						</p>
+					</aside>
+				</aside>
+            </div>
+            </li>
+                        
+            <li id="fifth" class="fifthanimation">
+            <a href="#">
+            <img src="images/img_5.jpg" alt="Sunbathing"/>
+            </a>
+            <div class="tooltip">
+            	<aside id="info_resaltada">
+					<!--Control de votos-->
+					<p class="votacion">
+						<a class="up" href="#"></a></br>
+						45</br>
+						<a class="down" href="#"></a>
+					</p>
+					<aside id ="datos_resaltados">
+					<!--El título del artículo-->
+						<h2 class="titulo_item">
+							<a href="#">Una mirada a Leap Motion: El control Minority Report</a>
+						</h2>
+						<!--El autor...-->
+						<p class="autor_item">
+							Por <a href="#">Freddy Vega</a>
+						</p>
+					</aside>
+				</aside>
+            </div>
+            </li>
+            </ul>
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+</div>
 				
 				</article>
 			<!--El primer artículo(Obviando la imagen grandototota)-->
@@ -259,10 +380,3 @@
 </body>
 </html>
 <!--Y ya está toda la estructura de la página =-D-->
-
-
-
-
-
-
-
