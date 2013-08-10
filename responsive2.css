@@ -1,6 +1,6 @@
 /*Y, ahora. ¡tan tan tan!... R-e-s-p-o-n-s-i-v-e ¡DESIGN!*/
 /*Cuando el viewport(la parte visible de la página) Sea mayor a 768px:*/
-@media screen and (min-width: 768px)
+@media screen and (min-width: 900px)
 {
 	/*Que el margin del body sea 0*/
 	body
@@ -54,6 +54,18 @@
 		text-align: center;
 		text-decoration: none;
 	}
+	#grupo #bienvenida #actividad #b_comentarios
+	{
+		background: #06bbe1;
+		border-radius: 1px;
+		color: white;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.5em 0;
+		margin-top: 3em;
+		text-align: center;
+		text-decoration: none;
+	}
 	#grupo #bienvenida #actividad .notificacion
 	{
 		border-bottom: 1.3px solid #CCC;
@@ -80,6 +92,16 @@
 		position: relative;
 		text-decoration: none;
 		vertical-align: middle;
+	}
+	#grupo #bienvenida #actividad .notificacion figure img
+	{
+		border: 1px #4C4C4C solid;
+		border-radius: 2px;
+		display: inline-block;
+		float: left;
+		width: 45px;
+		height: auto;
+		margin:0 0.5em 0.2em 0;
 	}
 	#grupo #bienvenida #actividad .notificacion .comentarios_item:after
 	{
@@ -169,7 +191,7 @@
 		font-style: italic;
 		
 	}
-	/*Litando el ancho del contenido al 70% del viewport*/
+	/*Limitando el ancho del contenido al 70% del viewport*/
 	#contenido 
 	{
 		display: block;
@@ -192,8 +214,7 @@
 	}
 
 }
-@media screen and (min-width: 900px)
-{}
+
 /*Ahora. Si la resolución llega a ser menor a 475px:*/
 @media screen and (max-width: 475px)
 {
