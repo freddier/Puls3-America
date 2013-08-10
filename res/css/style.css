@@ -22,7 +22,6 @@ html, body {
 	margin:0 auto;
 	overflow:hidden;
 	width: 100%;
-	height:auto;
 	display: inline-block;
 }
 
@@ -38,7 +37,6 @@ html, body {
 	border:5px solid #eaeaea;
 	box-shadow:1px 1px 5px rgba(0,0,0,0.7);
 	width: 98%;
-	height:auto;
 	margin:40px auto 0;
 	overflow:visible;
 	position:relative;
@@ -54,7 +52,6 @@ html, body {
 }
 #slider li {
 	width: 100%;
-	 height:auto; 
 	position:absolute;
 	top: -325px;
 	list-style:none;
