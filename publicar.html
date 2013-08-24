@@ -1,0 +1,111 @@
+<!--Declaramos el tipo de documento como html-->
+<!DOCTYPE html>
+<!--Y decimos que la página está en español-->
+<html lang="es">
+<!--Inicio del head-->
+<head>
+
+	<!-- Decimos que el set de caracteres es utf-8, para que reconozca tildes, diélesis... -->
+	<meta charset="utf-8" />
+	<!--Evitamos que se pueda hacer zoom desde un celular o tablet-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!--Título de la página-->
+	<title>Puls3: Comunidad online de gente pro y (no sé qué más escribir)</title>
+	<!--Insertando el Favicon(El ícono que va a la izquierda del <title>). No lo podrás ver con el "Open in Browser"-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<!--Añadiendo el Normalize-->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<!--Insertando la tipografía principal :D-->
+
+	<!--Conectando con los estilos ( css )-->
+	<link rel="stylesheet" href="css/estilos.css" />
+	<!--Y ahora con los estilos para el responsive design ( css )-->
+	<link rel="stylesheet" href="css/responsive.css" />
+	<!--Fin del head-->
+    <link rel="stylesheet" href="formulario/css/style.css">
+	<!-- Importando modernizr -->
+	<script src="js/modernizr-2.6.1.min.js"></script>
+</head>
+
+<!--inicio del body-->
+<body>
+	
+	<!--Aquí viene el header :o-->
+	<header>
+		<!--El logo-->
+		<figure id="logo">
+			<img src="img/logo.png" />
+		</figure>
+		<!--El título del header-->
+		<h1 id="titulo_header">Puls3: Comunidad de gente cool, atractiva y millonaria</h1>
+		<h1 id="titulo_header2">Puls3</h1>
+		<!--El campo para el login-->
+		<div id="login">
+			<aside>
+				<!--Un input para el nombre de usuario [ type: el tipo de entrada que recibirá;title: el tooltip que aparecerá cuando pases sobre                       él;placeholder: El texto que se mostrará hasta que comiences a escribir. ] -->
+				<input type="text" name="email" title="Nombre de Usuario" placeholder="Usuario" id="input1">
+				<!--Y otro input para la contraseña [Type:password mostrará todo lo que copies como un asterisco o un punto] -->
+				<input type="password" title="Contraseña" placeholder="Contraseña" id="input2">
+				<a href="#">
+					<div><a href="#" title="Iniciar sesión"></a></div>
+				</a>
+			</aside>
+		</div>
+		<!--El botón para ir al home-->
+		<a href="index.html" title="Home">
+			<div>
+				Home
+			</div>
+		</a>
+		<!--Fin del Header-->
+	</header>
+
+	<!--La barra de navegación-->
+	<nav>
+		<!--Y los diferentes botones en una lista desordenada ( Unordered List ) -->
+		<ul>
+			<!--Un item de la lista ( List Item ) -->
+			<li id="flechita_nav"><a href="#"></a></li>
+			<!--¿Ves la parte donde dice title="Python"?. Ese mensaje se mostrará cuando pases el cursor sobre el botón-->
+			<li><a href="python.html" title="Python">Python</a></li>
+			<!--¿Ves la parte donde dice href="html5.html"?. Allí irá cuando des click en el botón-->
+			<li><a href="html5.html" title="HTML5">HTML5</a></li>
+			<li><a href="javascript.html" title="Javascript">Javascript</a></li>
+			<li><a href="css3.html" title="CSS3">Css3</a></li>
+			<li><a href="django.html" title="Django">Django</a></li>
+			<li id="publicar_nav"><a href="publicar.html" title="Publicar">Publicar</a></li>
+		</ul>
+	</nav>
+    <form action="formulario/php/enviarpost.php" method="post" id="contactform">
+            <fieldset class="row">
+				<p>
+					<label for="your-name">Título</label>
+					<input type="text" name="name" id="your-name" class="input-xlarge" required placeholder="Título del Post">
+				</p>
+
+				<p style="display:inline-block"><label>Categoría </label><div id="tags"><label class="tag_publicar"><input type="checkbox"> Python</label><label style="margin:0 1.5em;"><input type="checkbox"> Html5</label><label class="tag_publicar"><input type="checkbox">  Javascript</label><label style="margin:0 1.5em;"><input type="checkbox"> Css3</label><label style="margin:0 1.5em;"><input type="checkbox"> Django</label></div>
+                <label for="your-name">Otra</label>
+				<input type="text" name="name" id="your-name" class="input-xlarge" placeholder="Separadas por comas">
+                </p>
+				<p>
+					<label for="your-subject" >Nivel</label>
+					<select name="Nivel" id="" >
+	                    <option value="Principiante">Principiante</option>
+                        <option value="Intermedio">Intermedio</option>
+                        <option value="Avanzado">Avanzado</option>
+                        <option value="Profesional">Profesional</option>
+                    </select>
+				</p>
+				<p>
+                   	<label for="your-message">Post</label>
+					<textarea name="message" cols="50" rows="10" id="your-message" class="input-xxlarge" required placeholder="Escribe aquí tu Post"></textarea>
+				</p>
+				<p>
+					<input type="submit" name="submit" class="primary" value="Publicar">
+				</p>
+                
+				<p hidden id="response"></p>
+			</fieldset>
+    </form>
+</body>
+</html>
