@@ -623,5 +623,9 @@ textarea:focus
     {
         margin:0 1.5em;
     }
+#username
+{
+    color:#888
+}
 /*¡¡Y ya!! :D... ya pasamos al responsive :(*/
 /*PD: No organizé alfabéticamente las transiciones porque me parece que se ve más organizado así...*/
