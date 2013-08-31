@@ -1,0 +1,459 @@
+/*Y ahora le damos estilo a la página :)*/
+
+/*Se importan las tipografías especiales...*/
+@font-face {
+	/*El nombre de la fuente*/
+	font-family:'icomoon';
+	/*No tendrá ningún estilo*/
+	font-style: normal;
+	/*El grosor será normal*/
+	font-weight: normal;
+	/*Ahora sí, se llaman las tipografías*/
+	src: url('../fonts/icomoon.eot');
+	src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),	url('../fonts/icomoon.woff') format('woff'),	url('../fonts/icomoon.ttf') format('truetype'),	url('../fonts/icomoon.svg#icomoon') format('svg');
+}
+
+/*Decimos qué características tendrán los links*/
+a 
+{
+	/*El color de los links*/
+	color:#DD4F24;
+	/*La decoración*/
+	text-decoration: none;
+}
+
+/*Características básicas del cuerpo de la página*/
+body 
+{
+	/*Color de fondo de la página.*/
+	background:#EFEFEF;
+	/*Color de la fuente*/
+	color:#4C4C4C;
+	/*Tipografía(PT Sans),y,en caso de que no se pueda cargar esa...Arial*/
+	font-family:"PT Sans",Arial;
+	/*Tamaño de fuente*/
+	font-size:16px;
+
+}
+
+/*Y del footer*/
+footer 
+{
+	background:#434343;
+	color:#A7A7A7;
+	/*El padding ( Es como un margen, pero interno ) */
+	padding:1em 0;
+	/*Que el texto esté centrado*/
+	text-align:center;
+	/*Y que el ancho sea del 100% de su contenedor*/
+	width: 100%;
+}
+
+/*Ahora estamos diciendo que le aplique los estilos a cualquier párrafo que esté dentro del footer*/
+footer p 
+{
+	/*Esto sí es un margen normal*/
+	margin:0;
+}
+
+header 
+{
+	background:#434343;
+	color:white;
+	margin:0;
+	/*Em es el tamaño total de una fuente, por lo tanto, ésto es la mitad del tamaño de una "M"*/
+	padding:0.5em;
+	/*Y declaramos la posición como relativa ( Para luego poder mover cosas libremente con absolute )*/
+	position: relative;
+}
+header a div 
+{
+	background-color:#06bbe1;
+	/*El redondeado del borde ( ↑← ↑→ ↓← ↓→  )*/
+	border-radius:3px 3px 0 0;
+	/*Espacio desde abajo*/
+	bottom:0;
+	color:white;
+	font-size:1.1em;
+	/*El alto*/
+    
+	height:25px;
+	/*Espacio desde la izquierda*/
+	left:60%;
+	/*El padding ( ↕ ↔ ) */
+	padding:0 10px;
+	/*Como está dentro del header ( Que tiene posición relativa ), podemos controlarlo con absolute*/
+	position:absolute;
+	/*Alineación vertical*/
+	vertical-align:middle;
+	/*El ancho*/
+	width:80px;
+}
+
+/*Ahora, a agregar las tipografías especiales:o*/
+/*Despues del div que está en el header...*/
+header a div:after 
+{
+	/*Agregar la "letra"*/
+	content:"\e002";
+	/*Que se pegue a la derecha*/
+	float:right;
+	/*Y la fuente(Lo más importante), que sabe a qué caracter se refiere*/
+	font-family:"icomoon";
+	/*Y que pase por toda la mitad*/
+	line-height:22px;
+	/*50% de opacidad*/
+	opacity:0.5;
+}
+
+/*Organizando algunos bugs del header...*/
+header:after 
+{
+	clear:both;
+	content:"";
+	display: block;
+}
+
+/*Definimos qué tipo de transición le vamos a hacer al home*/
+header a div 
+{
+		/*El prefijo para chrome (-webkit-)+Transition:+A qué le aplicamos la transición +duración +tipo de transición*/
+		-webkit-transition:background-color 1s ease;
+		/*El prefijo para mozilla (-moz-)*/
+		-moz-transition: background-color 1s ease;
+		/*El prefijo para opera (-o-)*/
+  		-o-transition: background-color 1s ease;
+  		/*Y los que no necesitan prefijo(IE :o)*/
+ 		transition: background-color 1s ease;
+}
+
+/*cuando el cursor esté sobre el home*/
+header a div:hover 
+{
+	/*El color de fondo cambiará*/
+	background-color:#07AECF;
+}
+
+/*El título del header*/
+header h1 
+{
+	display:block;
+	font-size:20px;
+	font-weight:normal;
+	margin:1em 180px 1em 100px;
+}
+
+/*Este es el logo ( El contenedor del logo, en realidad )*/
+header #logo 
+{
+	/*Que se pegará a la izquierda*/
+	float:left;
+}
+
+/*Este es el logo ( La imagen en sí ) */
+header #logo img 
+{
+	width:80px;
+}
+
+/*La barra de navegación*/
+nav 
+{
+	background:#878787;
+	font-size: 0.9em;
+}
+
+/*El contenedor de los botones del nav*/
+nav ul 
+{
+	/*Eliminando los puntos de los li(List items)*/
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+/*Cada botón del nav*/
+nav ul li 
+{
+	/*Se organizan en línea*/
+	display:inline-block;
+	margin:0;
+	/*Los alinearemos arriba ( verticalmente )*/
+	vertical-align:top;
+	/*Más transiciones*/
+	-webkit-transition:background-color 0.8s ease;
+	-moz-transition: background-color 0.8s ease;
+	-o-transition: background-color 0.8s ease;
+ 	transition: background-color 0.8s ease;
+}
+
+/*Los cambios de los botones cuando pase sobre ellos*/
+nav ul li:hover 
+{
+	background-color:#7C7C7C;
+}
+
+/*El área clickeable*/
+nav ul li a 
+{
+	color:white;
+	display:block;
+	padding:0.5em 0.6em;
+	/*Quitamos el underline de los botones*/
+	text-decoration:none;
+}
+
+/*La flechita de la izquierda, que aún no comprendo su utilidad...*/
+nav #flechita_nav 
+{
+	padding-left:0;
+	padding-right:0;
+}
+
+/*El área clickeable*/
+nav #flechita_nav a 
+{
+	background:#22BCE0;
+	padding:0.5em 0;
+	text-decoration:none;
+}
+
+/*Más tipografías cool...*/
+nav #flechita_nav a:after 
+{
+	content:"\e000";
+	font-family:"icomoon";
+	opacity:0.6;
+}
+
+/*El botón de publicar*/
+
+nav #publicar_nav 
+{
+	background:#DD4F24;
+	float:right;
+	margin-right:0;
+	padding-right:1em;
+	position:relative;
+	/*Que siempre esté al frente*/
+	z-index: 1;
+	
+}
+
+/*El area clickeable*/
+nav #publicar_nav a 
+{
+	display:inline-block;
+	/*padding ( ↑ → ↓ ←  )*/
+	padding:0.5em 2em 0.5em 0.6em;
+	text-decoration:none;
+}
+
+/*Más de esas cosas...*/
+nav #publicar_nav a:after 
+{
+	color:rgba(255,255,255,0.5);
+	content:"\e004";
+	font-family:"icomoon";
+	font-size:1.8em;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+/*Cuando se pase sobre el botón*/
+nav #publicar_nav:hover 
+{
+	background:#FF5B29;
+}
+
+/*Todo lo que compone la bienvenida*/
+#bienvenida 
+{
+	display:none;
+	margin:1%;
+}
+
+.votacion
+{
+    text-align: center;
+}
+
+/*Quitamos el underline de los botones para votar (Pues al principio se lo pusimos a todos los a)*/
+.votacion a 
+{
+	text-decoration:none;
+}
+
+/*Algunas cosas que le agregamos a ambos botones de votación, en donde sea que estén*/
+.votacion .down:after,
+.votacion .up:after 
+{
+	font-family:"icomoon";
+	font-size:1.5em;
+	vertical-align:bottom;
+}
+
+/*Agregar el botón para votar negativo*/
+.votacion .down:after 
+{
+	color:red;
+	content:"\e001";
+}
+
+/*Agregar el botón para votar positivo*/
+.votacion .up:after 
+{
+	color:green;
+	content:"\e002";
+}
+
+
+/*Características de las etiquetas*/
+.tag_item 
+{
+	background:#22BCE0;
+	border-radius:0.5em;
+	color:white;
+	float:left;
+	font-size: 16px;
+	margin:0.2em 0.2em;
+	padding:0.2em 0.5em;
+	text-decoration:none;
+}
+
+
+/*El contenedor del post ( Del artículo en "articulo.html" )*/
+#post_texto 
+{
+    padding: 2em 0;
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+    
+}
+
+/*El texto principal del post*/
+#post_texto #post_contenido
+{
+	font-size:16px;
+}
+
+/*El título del post*/
+#post_texto h1 
+{
+	font-size:1.3em;
+	text-align:center;
+}
+
+/*La imagen del post*/
+#post_texto figure img 
+{
+	width:100%;
+}
+
+/*La información sobre la imagen del post*/
+#post_texto figure figcaption 
+{
+	color:#b3b3b3;
+	font-size: 0.7em;
+}
+
+/*Desaparecemos el supergrupo ( Para luego aparecerlo de acuerdo con la resolución [En responsive.css] )*/
+#grupo
+{
+	display: none;
+}
+
+/*Dándole estilo a los inputs ( Como el de iniciar sesión )*/
+header input
+{
+   	/*Le damos un color grisaceo a la fuente*/
+  	color: #555555;
+  	/*Y la hacemos un poco más pequeña*/
+	font-size: 0.9em;
+	/*Los hacemos más gorditos*/
+  	padding: 6px;
+  	/*Y le ponemos un sexy borde gris*/
+  	border: 1px solid #cccccc;
+  	/*Y, Cómo no. Le damos un redondeado*/
+ 	border-radius: 3px;
+ 	float: left;
+ 	width: 80%;
+ 	display: inline-block;
+}
+
+/*El contenedor de los onputs para iniciar sesión y contraseña.*/
+header #login
+{
+	height: 100%;
+	margin-right: 0.6em;
+	position: absolute;
+	right: 0;
+	top:0;
+	vertical-align: middle;
+	width: 170px;
+}
+
+/*Ubicamos el input de nombre de usuario*/
+header #login #input1
+{
+	bottom:50%;
+	position: absolute;
+	width: 80%;
+}
+
+/*Y el input de la contraseña*/
+header #login #input2
+{
+	bottom:18%;
+	position: absolute;
+	width: 80%;
+}
+
+header #login div a
+{
+	background-color: #06bbe1;
+	color: white;
+	display: inline-block;
+	float: right;
+	height: 62%;
+	left: 90%;
+	position: absolute;
+	top: 20px;
+	vertical-align: middle;
+	width: 10%;
+}
+
+header #login div a:after 
+{
+	/*Agregar la "letra"*/
+	content:"\e002";
+	/*Que se pegue a la derecha*/
+	float:right;
+	/*Y la fuente(Lo más importante), que sabe a qué caracter se refiere*/
+	font-family:"icomoon";
+	/*Y que pase por toda la mitad*/
+	line-height:65px;
+}
+
+/*Cuando un input esté enfocado ( Ya sea porque le des click o porque tabulaste hasta llegar ahí ) */
+input:focus,
+textarea:focus 
+{
+	/*El color del borde cambiará*/
+	border-color: rgba(82, 168, 236, 0.8);
+	/*Quitaremos el borde doradito que se pone por defecto*/
+	outline: none;
+	/*Y ahora la opción para OldIE */
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.4);
+}
+
+#titulo_header2
+	{
+		display: none;
+	}
+
+
+/*¡¡Y ya!! :D... ya pasamos al responsive :(*/
+/*PD: No organizé alfabéticamente las transiciones porque me parece que se ve más organizado así...*/

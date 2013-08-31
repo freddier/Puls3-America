@@ -1,0 +1,297 @@
+
+ /* Basado en Jayj HTML5 2.1 */
+form {
+  margin: 0;
+}
+fieldset {
+  border: 4px double #ededed;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+}
+/* Labels */
+label {
+  color: #555555;
+  cursor: pointer;
+  /* Indicate that 'label' will shift focus to the associated form element */
+  display:inline-block;
+  font-weight:bold;
+  font-size:0.9em;
+  margin-bottom: 1.2em;
+  margin-right:0.7em;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+  margin-right:0.4em;
+}
+input[type="color"] {
+  padding: 3px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+/**
+ * Input styling
+ */
+input,
+select,
+textarea {
+  color: #555555;
+  font-size: 13px;
+  padding: 6px;
+}
+input,
+select,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border, box-shadow linear 200ms;
+  -moz-transition: border, box-shadow linear 200ms;
+  -ms-transition: border, box-shadow linear 200ms;
+  -o-transition: border, box-shadow linear 200ms;
+  transition: border, box-shadow linear 200ms;
+  /* :focus styling */
+
+  /* Invalid inputs, change focus to red */
+
+}
+
+input:invalid:focus,
+select:focus,
+textarea:invalid:focus {
+  border-color: #e9322d;
+  box-shadow: 0 0 6px #f8b9b7;
+}
+/* Input sizes */
+.input-mini {
+  width: 60px;
+}
+.input-small {
+  width: 90px;
+}
+.input-medium {
+  width: 150px;
+}
+.input-large {
+  width: 210px;
+}
+.input-xlarge {
+  width: 270px;
+}
+.input-xxlarge {
+  width: 100%;
+}
+/**
+ * Buttons
+ */
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6 100%);
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6 100%);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6 100%);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6 100%);
+  background-repeat: repeat-x;
+  border: 1px solid;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  color: #333333;
+  border-radius: 4px;
+  font-size: 14px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 9px 14px;
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  /* Display hand cursor for clickable form elements */
+  *overflow: visible;
+  /* Correct inner spacing displayed oddly in IE7 (doesn't effect IE6) */
+  /* Pink, primary button */
+
+}
+.btn:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #e6e6e6;
+  background-position: 0 -10px;
+  color: #333333;
+  -webkit-transition: background-position 100ms linear;
+  -moz-transition: background-position 100ms linear;
+  -ms-transition: background-position 100ms linear;
+  -o-transition: background-position 100ms linear;
+  transition: background-position 100ms linear;
+}
+.btn:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: thin dotted #333333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:active,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  background-color: #e6e6e6;
+  background-image: none;
+  outline: 0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn.primary,
+button.primary,
+input[type="button"].primary,
+input[type="reset"].primary,
+input[type="submit"].primary {
+  background-color: #22BCE0;
+  background-image: -moz-linear-gradient(top, #22BCE0, #22BCE0 100%);
+  background-image: -ms-linear-gradient(top, #22BCE0, #22BCE0 100%);
+  background-image: -webkit-linear-gradient(top, #22BCE0, #22BCE0 100%);
+  background-image: -o-linear-gradient(top, #22BCE0, #22BCE0 100%);
+  background-image: linear-gradient(top, #f950ab, #f71570 100%);
+  background-repeat: repeat-x;
+  border: 1px solid;
+  border-color: #0FA3C0;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn.primary:hover,
+button.primary:hover,
+input[type="button"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="submit"].primary:hover {
+  background-color: #33C0E2;
+  background-position: 0 -10px;
+  color: #ffffff;
+  -webkit-transition: background-position 100ms linear;
+  -moz-transition: background-position 100ms linear;
+  -ms-transition: background-position 100ms linear;
+  -o-transition: background-position 100ms linear;
+  transition: background-position 100ms linear;
+}
+.btn.primary:focus,
+button.primary:focus,
+input[type="button"].primary:focus,
+input[type="reset"].primary:focus,
+input[type="submit"].primary:focus {
+  outline: thin dotted #ffffff;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn.primary:active,
+button.primary:active,
+input[type="button"].primary:active,
+input[type="reset"].primary:active,
+input[type="submit"].primary:active {
+  background-color: #22BCE0;
+  background-image: none;
+  outline: 0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+/*
+ * Disabled elements
+ */
+.btn[disabled],
+button[disabled],
+input[disabled] {
+  cursor: not-allowed;
+  background-color: #ededed;
+  background-image: none !important;
+  color: #333333;
+  text-shadow: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+/**
+ * Search inputs
+  */
+/* =============================================================================
+   Content
+   ========================================================================== */
+.alert {
+  background-color: #ededed;
+  border-left: 5px solid #d9d9d9;
+  border-radius: 0 5px 5px 0;
+  color: #222222;
+  padding: 10px 14px;
+  margin-bottom: 25px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.alert h4 {
+  border-bottom: 0;
+  color: inherit;
+  padding-bottom: 0;
+  margin: 10px 0;
+}
+.alert p + p {
+  margin-bottom: 5px;
+}
+.alert-warning {
+  background-color: #fef9c7;
+  border-color: #fcdd4a;
+  color: #3b3601;
+}
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #54b646;
+  color: #0d370d;
+}
+.alert-danger,
+.alert-error {
+  background-color: #f2dede;
+  border-color: #ce838f;
+  color: #7a0b0a;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #049cdb;
+  color: #0c3346;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.assistive-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
