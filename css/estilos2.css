@@ -227,6 +227,7 @@ nav #flechita_nav a:after
 }
 
 /*El botón de publicar*/
+
 nav #publicar_nav 
 {
 	background:#DD4F24;
@@ -244,7 +245,7 @@ nav #publicar_nav a
 {
 	display:inline-block;
 	/*padding ( ↑ → ↓ ←  )*/
-	padding:0.5em 2em 0.5em 1em;
+	padding:0.5em 2em 0.5em 0.6em;
 	text-decoration:none;
 }
 
@@ -270,54 +271,12 @@ nav #publicar_nav:hover
 #bienvenida 
 {
 	display:none;
-	margin:1em;
+	margin:1%;
 }
 
-/*Características generales de los enlaces a artículos*/
-.item 
+.votacion
 {
-	background:white;
-	/*El borde ( Sólo para abajo )*/
-	border-bottom:3px #22BCE0 solid;
-	/*El margen ( Sólo para abajo )*/
-	margin-bottom:3em;
-	/*El alto mínimo*/
-	min-height:128px;
-	position:relative;
-}
-
-/*Todos los párrafos del contenido*/
-#contenido p 
-{
-	color:#7A7A7A;
-	font-size:0.9em;
-}
-
-/*Éste es el item que sólo ocupa el 70%*/
-.primer_item 
-{
-	background:white;
-	border-bottom:3px #de5659 solid;
-	margin-bottom:3em;
-	min-height:128px;
-	padding-right:1em;
-	position:relative;
-}
-
-/*Y la sección para votar*/
-.primer_item .votacion,
-.item .votacion 
-{
-	background:white;
-	border-radius:0 0 0.5em 0.5em;
-	margin:3px 0 0 0;
-	padding:0.5em 0;
-	position:absolute;
-	text-align:center;
-	/*Que se ubique abajo de todo lo demás*/
-	top:100%;
-	/*Y tenga el mismo ancho de la imagen*/
-	width:96px;
+    text-align: center;
 }
 
 /*Quitamos el underline de los botones para votar (Pues al principio se lo pusimos a todos los a)*/
@@ -349,103 +308,29 @@ nav #publicar_nav:hover
 	content:"\e002";
 }
 
-/*Alinear los datos de los enlaces ( Desde ahora item ) a la derecha*/
-.item .datos_item 
-{
-	text-align: right;
-}
-
-/*Haciendo una caja tras el enlace a los comentarios*/
-.item .datos_item .comentarios_item,
-.primer_item .datos_item .comentarios_item  
-{
-	background:#878787;
-	border-radius:4px;
-	color:white;
-	margin:0 0 0 2em;
-	padding:4px;
-	position:relative;
-	/*Eliminando toda decoración del texto*/
-	text-decoration:none;
-}
-
-/*Y agregando un triángulo abajo*/
-.item .datos_item .comentarios_item:after,
-.primer_item .datos_item .comentarios_item:after {
-	border-left:5px solid transparent;
-	border-right:5px solid transparent;
-	border-top:5px solid #878787;
-	content:"";
-	left:18px;
-	position:absolute;
-	top:100%;
-}
-
-/*La estrellita para agregar a favoritos*/
-.item .datos_item .guardar_item,
-.primer_item .datos_item .guardar_item 
-{
-	margin:0 1em;
-	/*De nuevo debemos quitarle el underline pues es un "a"*/
-	text-decoration:none;
-}
-
-/*Le agregamos el ícono de la estrella*/
-.datos_item .guardar_item:after
-{
-	color:#FD5;
-	content:"\e003";
-	font-family: "icomoon";
-}
 
 /*Características de las etiquetas*/
-.datos_item .tag_item 
+.tag_item 
 {
 	background:#22BCE0;
 	border-radius:0.5em;
 	color:white;
 	float:left;
 	font-size: 16px;
-	margin:0 0.2em;
+	margin:0.2em 0.2em;
 	padding:0.2em 0.5em;
 	text-decoration:none;
 }
 
-/*El contenedor de la imagen del item*/
-.imagen_item 
-{
-	float:left;
-	margin:0 1em 0 0;
-}
-
-/*La imagen del item*/
-.imagen_item img 
-{
-	width:96px;
-}
-
-/*El título del item*/
-.titulo_item 
-{
-	font-size:1em;
-	font-style:italic;
-	padding:0.5em 0.5em 0;
-}
-
-/*El enlace al artículo*/
-.titulo_item a 
-{
-	color:#444;
-	text-decoration:none;
-}
 
 /*El contenedor del post ( Del artículo en "articulo.html" )*/
 #post_texto 
 {
-	padding-top:0;
-	padding:4em;
-	text-align:justify;
-	width: 80%;
+    padding: 2em 0;
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+    
 }
 
 /*El texto principal del post*/
@@ -474,52 +359,10 @@ nav #publicar_nav:hover
 	font-size: 0.7em;
 }
 
-/*Esta es la información resumida ( Desde ahora itemito ) que hay en el slideshow sobre el post*/
-.item_imagen
-{
-	/*Eliminamos la sombra del texto que el slider nos crea por defecto*/
-	text-shadow:none;
-}
-
-/*El título del itemito*/
-.item_imagen .titulo_item_imagen 
-{
-	font-size:1em;
-	font-style:italic;
-	padding:0.5em 0.5em 0;
-}
-
-/*Los links del itemito*/
-.item_imagen .titulo_item_imagen a 
-{
-	color:#BEBEBE;
-	text-decoration:none;
-}
-
-/*Control de votos del itemito*/
-.item_imagen .votacion
-{
-	color: black;
-	float: left;
-	font-size: 1.3em;
-	height: 5em;
-	margin-right: 1em;
-	text-align: center;
-	vertical-align: middle;
-	width: 10%;
-}
-
 /*Desaparecemos el supergrupo ( Para luego aparecerlo de acuerdo con la resolución [En responsive.css] )*/
 #grupo
 {
 	display: none;
-}
-
-/*Y vamos a decir que las etiquetas resaltadas...*/
-.resaltar
-{
-	/*...Tengan un borde de 2px de grosor, línea sólida, de un color un poco más oscuro que el relleno.*/
-	border:2px solid #0FA3C0;
 }
 
 /*Dándole estilo a los inputs ( Como el de iniciar sesión )*/
@@ -610,22 +453,7 @@ textarea:focus
 	{
 		display: none;
 	}
-#tags
-    {
-        border:1px solid #cccccc;
-        border-radius:3px;
-        display:inline-block;
-        padding:6px;
-        margin-left:0.4em;
-        background-color:#ffffff;
-    }
-.tag_publicar
-    {
-        margin:0 1.5em;
-    }
-#username
-{
-    color:#888
-}
+
+
 /*¡¡Y ya!! :D... ya pasamos al responsive :(*/
 /*PD: No organizé alfabéticamente las transiciones porque me parece que se ve más organizado así...*/

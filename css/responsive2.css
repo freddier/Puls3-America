@@ -1,8 +1,73 @@
 /*Y, ahora. ¡tan tan tan!... R-e-s-p-o-n-s-i-v-e ¡DESIGN!*/
-/*Cuando el viewport(la parte visible de la página) Sea mayor a 900px:*/
-@media screen and (min-width: 920px)
+/*Ahora. Si la resolución llega a ser menor a 675px:*/
+@media screen and (max-width: 475px)
 {
-	/*Que el margin del body sea 0*/
+	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/	
+	nav ul li
+	{
+		display: block;
+		margin-left: auto;
+	    margin-right: auto;
+	}
+	#info_usuario #links_seguir,
+	#info_usuario #avatar
+	{
+		width: 100%;
+	}
+	#info_usuario  #seguir
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+	#info_usuario #redes_sociales
+	{
+		display: none;
+	}
+}
+@media screen and (max-width: 900px)
+{
+	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/	
+#actividad,#info_usuario
+{
+	display: block;
+	width: 95%;
+
+}
+
+}
+@media screen and (max-width: 540px)
+{
+    nav #publicar_nav 
+    {
+        float:none;
+        margin:auto;
+    }
+}
+@media screen and (max-width: 675px)
+{
+	/*El título del header dejará de mostrarse*/
+	#titulo_header
+	{
+		display: none;
+	}
+	header a div
+	{
+		left: 20%;
+	}
+	@media screen and (min-width: 350px)
+	{
+		/*El título alternativo aparecerá*/	
+		#titulo_header2
+		{
+			display: block;
+		}
+    }
+}
+
+/*¡Y ya! :D*/
+
+/*Algunos estilos temporales...Luego crearé una hoja de estilos para ponerlos, por ahora, los dejaré por aquí*/
 	body
 	{
 		margin: 0 auto;
@@ -29,10 +94,10 @@
 	{
 		font-size: 1em;
 		width: 65%;
-        margin:0.6em 2em 0.6em 4em;
+        margin:0;
 	   padding:0;
     }
-    #post_texto #post_contenido
+#post_texto #post_contenido
 {
 	font-size:16px;
 }
@@ -45,11 +110,10 @@
 	{
 		display: block;
 		border-bottom: 1.3px solid #CCC;
-		margin-left: 1em;
+		margin-left: 1.2%;
 		float: left;
-		margin-top: 1em;
-		width: 600px;
-
+		margin-top: 1.2%;
+		width: 45%;
 	}
 
 	 #actividad #b_actividad 
@@ -155,7 +219,7 @@
 		height: 50px;
 		margin:0 0.5em 0.2em 0;
 	}
-	#grupo #bienvenida .seguir
+	#grupo #bienvenida #seguir
 	{
 		background: #06bbe1;
 		border-radius: 3px;
@@ -209,39 +273,83 @@
 	{ 
 		width: 100%; 
 	}
-
-}
-
-/*Ahora. Si la resolución llega a ser menor a 675px:*/
-@media screen and (max-width: 675px)
-{
-	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/
-	nav ul li
+	 #aportes
 	{
 		display: block;
-		margin-left: auto;
-	    margin-right: auto;
-  	}
-	/*El título del header dejará de mostrarse*/
-	#titulo_header
-	{
-		display: none;
+		border-bottom: 1.3px solid #CCC;
+		float: left;
+		margin-top: 1em;
+		width: 100%;
 	}
-	header a div
-	{
-		left: 20%;
-	}
-@media screen and (min-width: 350px)
-	{
-		/*El título alternativo aparecerá*/	
-		#titulo_header2
-		{
-			display: block;
-		}
-	}
-}
 
-
-/*¡Y ya! :D*/
-/*Cualquier duda la puedes comentar, y yo u otra persona te la responderá 
-*/
+	 #aportes #b_aportes 
+	{
+		background: #4C4C4C;
+		border-radius: 1px;
+		color: white;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.5em 0;
+		text-align: center;
+		text-decoration: none;
+	}
+	 #aportes #b_comentarios
+	{
+		background: #4C4C4C;
+		border-radius: 1px;
+		color: white;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.5em 0;
+		margin-top: 3em;
+		text-align: center;
+		text-decoration: none;
+	}
+	 #aportes .notificacion
+	{
+		border-bottom: 1.3px solid #CCC;
+		color:#b3b3b3;
+		padding: 9px 0;
+	}
+	 #aportes .notificacion .aportes_mensaje
+	{
+		
+		display: block;
+		float: right;
+		vertical-align: middle;
+		width: 75%
+	}
+	 #aportes .notificacion .comentarios_item
+	{
+		background: #4C4C4C;
+		border-radius: 4px;
+		color: white;
+		display: block;
+		float: left;
+		margin-right: 2em;
+		margin-top: 2%;
+		padding: 4px;
+		position: relative;
+		text-decoration: none;
+		vertical-align: middle;
+	}
+	 #aportes .notificacion figure img
+	{
+		border: 1px #4C4C4C solid;
+		border-radius: 2px;
+		display: inline-block;
+		float: left;
+		width: 45px;
+		height: auto;
+		margin:0 0.5em 0.2em 0;
+	}
+	 #aportes .notificacion .comentarios_item:after
+	{
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #4C4C4C;
+		content: "";
+		left :25px;
+		position: absolute;
+		top:100%;
+	}

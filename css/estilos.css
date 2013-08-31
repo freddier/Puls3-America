@@ -245,7 +245,7 @@ nav #publicar_nav a
 {
 	display:inline-block;
 	/*padding ( ↑ → ↓ ←  )*/
-	padding:0.5em 2em 0.5em 1em;
+	padding:0.5em 2em 0.5em 0.6em;
 	text-decoration:none;
 }
 
@@ -272,6 +272,13 @@ nav #publicar_nav:hover
 	{
 		display: none;
 		border-bottom: 1.3px solid #CCC;
+
+	}
+#info_usuario #aportes
+	{
+
+		border-bottom: 1.3px solid #CCC;
+
 	}
 
 /*Características generales de los enlaces a artículos*/
@@ -443,7 +450,7 @@ nav #publicar_nav:hover
 /*El contenedor del post ( Del artículo en "articulo.html" )*/
 #post_texto 
 {
-	padding-top:0;
+	padding-top:2em;
 	margin:3em 2.5%;
 	text-align:justify;
 	width: 95%;
@@ -631,15 +638,16 @@ textarea:focus
 #info_usuario #avatar
 	{
 		display: inline-block;
-		height: 180px;
+		height: 100%;
 		margin: 0;
 		padding: 0;
 		vertical-align: top;
 		position: relative;
+		width: 45%;
 	}
 #info_usuario #avatar img
 	{
-		height: 180px;
+		width: 100%;
 	}
 #info_usuario  #seguir
 	{
@@ -648,13 +656,14 @@ textarea:focus
 		box-shadow: 1px 3px 0.3px #D4D4D4;
 		color: white;
 		font-size: 1.4em;
-		padding: 0.7em 0.9em;
+		padding: 6% 0;
 		text-align: center;
 		text-decoration: none;
 		vertical-align: top;
-		width: 7em;
-		margin-left: 1em;
+		width: 99%;
+		margin-left: 1%;
 		display: block;
+		margin-bottom: 79%;
 	}
 #info_usuario #avatar
 	{
@@ -662,7 +671,7 @@ textarea:focus
 	}
 #info_usuario #avatar #puntos
 	{
-		bottom: 0;
+		bottom: 4px;
 		text-align: center;
 		position: absolute;
 		width: 100%;
@@ -672,16 +681,14 @@ textarea:focus
 		padding: 0.5em 0;
 		background-color: rgba(250,250,250,0.8);
 	}
-#info_usuario p
+#info_usuario #redes_sociales
 	{
 		font-size: 1.2em;
-		padding: 0;
 		color: #bbb;
 		margin: 0 0 0 1em;
 		position: absolute;
 		bottom: 0;
 		display: block;
-
 	}
 #info_usuario p span
 	{
@@ -691,10 +698,12 @@ textarea:focus
 	}
 #info_usuario
 	{
-		margin:1em;
+		margin:1.2%;
 		display: inline-block;
 		width: 500px;
 		float: left;
+		width: 50%;
+
 	}
 #notificaciones
 	{

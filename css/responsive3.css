@@ -17,29 +17,30 @@
 	#grupo #bienvenida
 	{
 		display: block;
-		margin-top: 0;
+		margin-top: 2em;
 		float: right;
 		margin-right: 2%;
 		/*Y ocupe el 25% del viewport*/
-		width: 25%;
+		width: 22%;
 	
 	}
 	#post_texto
 	{
 		font-size: 1.1em;
-		width: 65%;
+        width: 71%;
+        padding: 1%;
+        padding-top: 0;
+        padding-bottom:35px;
+        margin: 0;
 	}
 	#post_texto h1
 	{
 		font-size: 2em;
 	}
-	#grupo #bienvenida
-	{
-	
-		margin-top: 2em;
-	
-	
-	}
+    #post_texto #post_contenido
+    {
+        font-size:16px;
+    }
 	/*Explicando cómo se deberán ver algunas cosas...*/
 	#grupo #bienvenida #actividad
 	{
@@ -145,6 +146,7 @@
 		font-size: 1.2em;
 		width: 60%;
 		vertical-align: top;
+		color:#555;
 	}
 	#grupo #bienvenida #autor_nombre span
 	{
@@ -222,16 +224,27 @@
 
 }
 
-/*Ahora. Si la resolución llega a ser menor a 475px:*/
-@media screen and (max-width: 675px)
+@media screen and (max-width: 475px)
 {
-	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/
+	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/	
 	nav ul li
 	{
 		display: block;
 		margin-left: auto;
 	    margin-right: auto;
-  	}
+	}
+
+}
+@media screen and (max-width: 540px)
+{
+    nav #publicar_nav 
+    {
+        float:none;
+        margin:auto;
+    }
+}
+@media screen and (max-width: 675px)
+{
 	/*El título del header dejará de mostrarse*/
 	#titulo_header
 	{
@@ -241,15 +254,14 @@
 	{
 		left: 20%;
 	}
-@media screen and (min-width: 350px)
+	@media screen and (min-width: 350px)
 	{
 		/*El título alternativo aparecerá*/	
 		#titulo_header2
 		{
 			display: block;
 		}
-	}
-}
+    }
 }
 
 /*¡Y ya! :D*/

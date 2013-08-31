@@ -235,6 +235,11 @@
 }
 @media screen and (max-width: 675px)
 {
+    nav #publicar_nav 
+    {
+        float:none;
+        margin:auto;
+    }
 	/*El título del header dejará de mostrarse*/
 	#titulo_header
 	{
@@ -251,7 +256,7 @@
 		{
 			display: block;
 		}
-}
+    }
 }
 
 /*Si la resolución llegase a bajar de 350px:*/
